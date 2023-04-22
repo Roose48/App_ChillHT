@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "312304370345",
+    "project_id": "chilldb-415f7",
+    "storage_bucket": "chilldb-415f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312304370345:android:97479e6633fb1bb4775fb8",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "312304370345-slrmck7b2bvvcindun55j5hif4sfsj2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR5X7_pRl9a_1I62jdgsUW08ncaNk0zEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "312304370345-slrmck7b2bvvcindun55j5hif4sfsj2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
