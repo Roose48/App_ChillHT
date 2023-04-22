@@ -10,77 +10,148 @@ class States extends StatefulWidget {
 }
 
 class _StatesState extends State<States> {
-  List<Map<String, dynamic>> allDepartment = [
-    {"id": 1, "name": 'Oeust'},
-    {"id": 2, "name": 'Sud-Est'},
-    {"id": 3, "name": 'Nord'},
-    {"id": 4, "name": 'Nord-Est'},
-    {"id": 5, "name": 'Artibonite'},
-    {"id": 6, "name": 'Centre'},
-    {"id": 7, "name": 'Sud'},
-    {"id": 8, "name": 'GrandAnse'},
-    {"id": 9, "name": 'Nord-Ouest'},
-    {"id": 10, "name": 'Nippes'}
-  ];
+
+  Widget deptCard(String name){
+    return Container(
+            height: 70.0,
+            width: 10.0,
+            margin: EdgeInsets.fromLTRB(30.0, 0.0, 30.0, 20),
+            decoration: BoxDecoration(
+              color: Color.fromARGB(255, 233, 66, 16),
+              borderRadius: BorderRadius.circular(20.0),
+            ),
+            child: Center(
+              child: Text(
+                name,
+                style: const TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black
+                ),
+              ),
+          ),
+          );
+  }
+
+ 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Department'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(50.0),
+      body: SafeArea(
+      child: Container(
+        color: Colors.black,
         child: Column(
           children: [
-            const SizedBox(
-              height: 20,
-              width: 20,
-            ),
-            const TextField(
-              decoration: InputDecoration(
-                  labelText: 'Search', suffixIcon: Icon(Icons.search)),
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            Expanded(
-              child: ListView.builder(
-                itemCount: allDepartment.length,
-                itemBuilder: (context, index) => GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => DepartmentPage(
-                          department: allDepartment[index],
-                        ),
-                      ),
-                    );
-                  },
-                  child: Card(
-                    key: ValueKey(allDepartment[index]["id"]),
-                    color: Colors.blue,
-                    elevation: 4,
-                    margin: const EdgeInsets.symmetric(vertical: 10),
-                    child: ListTile(
-                      leading: Text(
-                        allDepartment[index]["id"].toString(),
-                        style: const TextStyle(
-                            fontSize: 24, color: Colors.white),
-                      ),
-                      title: Text(allDepartment[index]["name"]),
-                    ),
+      SizedBox(height: 20),
+            Center(
+              child: Image.asset(
+            'assets/images/chillHT.png',
+            width: 100,
+            height: 100,
+          ),
+        ),
+
+      SizedBox(height: 5),
+      
+      Container(
+                color: Colors.black,
+                padding: EdgeInsets.all(20),
+                margin: EdgeInsets.all(20),
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: 'search',
+                    filled: true,
+                    fillColor: Colors.white,
+                    prefixIcon: Icon(Icons.search, color: Colors.black),
+                    border: OutlineInputBorder(
+                      borderRadius:BorderRadius.circular(20),
+                      borderSide: BorderSide.none)
                   ),
                 ),
               ),
-            ),
-          ],
-        ),
+            
+            Expanded(
+                flex: 3,
+                child: Container(
+                    decoration: const BoxDecoration(
+                    color: Color.fromARGB(174, 255, 255, 255),
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(40.0),
+                      topRight: Radius.circular(40.0),
+                    ),
+                  ),
+                    child: ListView(
+                      children: [
+                        deptCard("Ouest"),
+                        deptCard("Sud-Est"),
+                        deptCard("Nord"),
+                        deptCard("Nord-Est"),
+                        deptCard("Artibonite"),
+                        deptCard("Centre"),
+                        deptCard("Sud"),
+                        deptCard("GrandAnse"),
+                        deptCard("Nord-Ouest"),
+                        deptCard("Nippes"),
+
+                      ],
+                      ),
+                    ),
+              ),
+          ]
+          ),
       ),
+    ),
     );
   }
 }
+
+// child: ListView(
+//           children: [
+//             const SizedBox(
+//               height: 20,
+//               width: 20,
+//             ),
+//             const TextField(
+//               decoration: InputDecoration(
+//                   labelText: 'Search', suffixIcon: Icon(Icons.search)),
+//             ),
+//             const SizedBox(
+//               height: 20,
+//             ),
+//             Expanded(
+//               child: ListView.builder(
+//                 itemCount: allDepartment.length,
+//                 itemBuilder: (context, index) => GestureDetector(
+//                   onTap: () {
+//                     Navigator.push(
+//                       context,
+//                       MaterialPageRoute(
+//                         builder: (context) => DepartmentPage(
+//                           department: allDepartment[index],
+//                         ),
+//                       ),
+//                     );
+//                   },
+//                   child: Card(
+//                     key: ValueKey(allDepartment[index]["id"]),
+//                     color: Colors.blue,
+//                     elevation: 4,
+//                     margin: const EdgeInsets.symmetric(vertical: 10),
+//                     child: ListTile(
+//                       leading: Text(
+//                         allDepartment[index]["id"].toString(),
+//                         style: const TextStyle(
+//                             fontSize: 24, color: Colors.white),
+//                       ),
+//                       title: Text(allDepartment[index]["name"]),
+//                     ),
+//                   ),
+//                 ),
+//               ),
+//             ),
+//           ],
+//         ),
 
 class DepartmentPage extends StatelessWidget {
   final Map<String, dynamic> department;
@@ -90,15 +161,15 @@ class DepartmentPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(department["name"]),
-      ),
-      body: Center(
-        child: Text(
-          "This is the ${department["name"]} department page",
-          style: const TextStyle(fontSize: 24),
-        ),
-      ),
+    //  appBar: AppBar(
+    //     title: Text(department["name"]),
+    //  ),
+    //   body: Center(
+    //     child: Text(
+    //      "This is the ${department["name"]} department page",
+    //      style: const TextStyle(fontSize: 24),
+    //     ),
+    //   ),
     );
   }
 }
