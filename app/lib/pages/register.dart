@@ -11,7 +11,7 @@ class Register extends StatelessWidget {
   final TextEditingController addressController = TextEditingController();
   final TextEditingController departmentController = TextEditingController();
 
-  Register({super.key});
+  Register({super.key, required String title});
 
   final _firestore = FirebaseFirestore.instance;
 
@@ -24,9 +24,12 @@ class Register extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+         // backgroundColor: Colors.black,
         appBar: AppBar(
           title: const Text('Login your Business'),
+          backgroundColor: Colors.black,
         ),
+
         body: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Column(
@@ -34,7 +37,7 @@ class Register extends StatelessWidget {
             children: [
               TextField(
                 controller: emailController,
-                decoration: const InputDecoration(
+                decoration: const InputDecoration(                  
                   labelText: 'Email',
                 ),
                 onChanged: (value) => email = value,
@@ -89,6 +92,7 @@ class Register extends StatelessWidget {
                 },
                 child: Text('Upload Image'),
                 style: ElevatedButton.styleFrom(
+                  backgroundColor: Color.fromARGB(255, 233, 66, 16),
                  shape: RoundedRectangleBorder(
                  borderRadius: BorderRadius.circular(10),
     ),
@@ -111,10 +115,12 @@ class Register extends StatelessWidget {
                 },
                 child: Text('Register'),
                 style: ElevatedButton.styleFrom(
+                  
                  shape: CircleBorder(), // Utilisation de CircleBorder pour faire le bouton en forme de cercle
                  padding: EdgeInsets.all(0), // Suppression de l'espacement interne pour que le cercle occupe toute la place disponible
                  minimumSize: Size(60, 80), // Définition de la largeur et de la hauteur pour qu'elles soient égales
-                 backgroundColor: Colors.blue, // Couleur de fond du cercle
+                 backgroundColor: Color.fromARGB(255, 233, 66, 16),
+ // Couleur de fond du cercle
                  elevation: 3, 
                 ),
               ),

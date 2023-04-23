@@ -1,13 +1,16 @@
 import 'package:app/pages/places.dart';
 import 'package:app/pages/register.dart';
+import 'package:app/pages/states.dart';
 import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.black,
       appBar: AppBar(
+        backgroundColor: Colors.black,
+        centerTitle: true,
         title: const Text(
           'Homepage',
           style: TextStyle(
@@ -44,30 +47,7 @@ class Homepage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Places()),
-                );
-              },
-              style: ElevatedButton.styleFrom(
-                minimumSize: Size(250, 50),
-                textStyle: TextStyle(fontSize: 20),
-                primary: Colors.white,
-                onPrimary: Colors.black,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(30),
-                  side: BorderSide(
-                    color: Colors.white,
-                    width: 2,
-                  ),
-                ),
-              ),
-              child: Text('Thing To Do'),
-            ),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Register()),
+                  MaterialPageRoute(builder: (context) => States( title: 'bae', name: 'AllDepartement',)),
                 );
               },
               style: ElevatedButton.styleFrom(
@@ -77,8 +57,31 @@ class Homepage extends StatelessWidget {
                 onPrimary: Colors.black,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
-                  side: BorderSide(
-                    color: Colors.white,
+                  side: const BorderSide(
+                    color: Colors.deepOrange,
+                    width: 2,
+                  ),
+                ),
+              ),
+              child: Text('Thing To Do'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) =>  Register(title: 'AllDepartement',)),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                minimumSize: Size(250, 50),
+                textStyle: TextStyle(fontSize: 20),
+                primary: Colors.white,
+                onPrimary: Colors.black,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                  side: const BorderSide(
+                    color: Colors.deepOrange,
                     width: 2,
                   ),
                 ),

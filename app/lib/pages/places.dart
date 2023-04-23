@@ -4,37 +4,47 @@ import 'package:flutter/material.dart';
 
 
 class Places extends StatelessWidget {
-  const Places({super.key});
+  final String name;
+
+  const Places({super.key, required this.name});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        backgroundColor: Colors.black,
+        
         title: Text(
-          "Find Thing To Do",
-          style: Theme.of(context).textTheme.titleLarge,
+          name,
+          
+          style: Theme.of(context).textTheme.titleLarge?.copyWith(
+            color: Colors.white ),
+        
         ),
       ),
       
-      body: Center(
+      body: Container(
+        color: Colors.black,
+        child:Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            buildButton(context, 'hotel', Icons.hotel, Colors.blue,
+            buildButton(context, 'hotel', Icons.hotel, Color.fromARGB(255, 233, 66, 16),
               ),
-            SizedBox(height:40),
+            const SizedBox(height:40),
 
-            buildButton(context, 'Restaurant', Icons.restaurant, Colors.blue),
-            SizedBox(height: 40),
+            buildButton(context, 'Restaurant', Icons.restaurant, Color.fromARGB(255, 233, 66, 16),),
+            const SizedBox(height: 40),
 
-            buildButton(context, 'Museum', Icons.museum, Colors.blue),
-            SizedBox(height: 40),
+            buildButton(context, 'Museum', Icons.museum, Color.fromARGB(255, 233, 66, 16),),
+            const SizedBox(height: 40),
 
-            buildButton(context, 'Beach', Icons.beach_access, Colors.blue),
+            buildButton(context, 'Beach', Icons.beach_access, const Color.fromARGB(255, 233, 66, 16),),
           ],
         ),
       ),
+      )
     );
   }
 
@@ -43,7 +53,7 @@ class Places extends StatelessWidget {
     return GestureDetector(
        onTap: () => Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => States(title: "bb")),
+        MaterialPageRoute(builder: (context) => States(title: "bb", name: '',)),
       ),
   
       child: Container(

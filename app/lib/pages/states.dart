@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:app/pages/places.dart';
 
 class States extends StatefulWidget {
-  const States({super.key, required this.title});
+  const States({super.key, required this.title, required String name});
 
   final String title;
 
@@ -12,7 +13,16 @@ class States extends StatefulWidget {
 class _StatesState extends State<States> {
 
   Widget deptCard(String name){
-    return Container(
+    return  GestureDetector(
+    onTap: ()  => Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) =>  Places(name: name),
+        ),
+        
+      ),
+    
+     child: Container(
             height: 70.0,
             width: 10.0,
             margin: EdgeInsets.fromLTRB(30.0, 0.0, 30.0, 20),
@@ -30,7 +40,9 @@ class _StatesState extends State<States> {
                 ),
               ),
           ),
-          );
+          ),
+    );
+    
   }
 
  
@@ -43,7 +55,7 @@ class _StatesState extends State<States> {
         color: Colors.black,
         child: Column(
           children: [
-      SizedBox(height: 20),
+      const SizedBox(height: 20),
             Center(
               child: Image.asset(
             'assets/images/chillHT.png',
