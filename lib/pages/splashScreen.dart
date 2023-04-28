@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:ffi';
 import 'package:app/pages/homepage.dart';
 
 class Splash extends StatefulWidget {
