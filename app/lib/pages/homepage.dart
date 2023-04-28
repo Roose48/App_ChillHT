@@ -1,3 +1,4 @@
+import 'package:app/pages/login.dart';
 import 'package:app/pages/places.dart';
 import 'package:app/pages/register.dart';
 import 'package:app/pages/states.dart';
@@ -70,7 +71,7 @@ class Homepage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) =>  Register(title: 'AllDepartement',)),
+                  MaterialPageRoute(builder: (context) =>  Login(title: 'AllDepartement',)),
                 );
               },
               style: ElevatedButton.styleFrom(

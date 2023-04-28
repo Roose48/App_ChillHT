@@ -1,0 +1,991 @@
+[
+    {
+        "ID": 1,
+        "Departement_ID": 1,
+        "type": "Hotel",
+        "Nom": "Marriot Port-au-Prince Hotel",
+        "Adress": "147, Avenue Jean Paul II, Turgeau Port-au-Prince, Haiti HT 6113",
+        "Distance": null,
+        "Images": null,
+        "Description": "Profitez de la sophistication d\u00e9contract\u00e9e de l'h\u00f4tel Marriott Port-au-Prince. Nous vous accueillons en Ha\u00efti avec un emplacement in\u00e9gal\u00e9, \u00e0 seulement 6,9 miles de l'a\u00e9roport international Toussaint Louverture et \u00e0 proximit\u00e9 des principales attractions telles que le mus\u00e9e MUPANAH, la communaut\u00e9 de P\u00e9tion-Ville, le palais national et l'universit\u00e9 Quisqueya. Trouvez votre refuge dans les chambres branch\u00e9es de l'h\u00f4tel, qui disposent d'une literie de luxe, d'\u0153uvres d'art ha\u00eftiennes et d'un service d'\u00e9tage pratique.\n\n"
+    },
+    {
+        "ID": 2,
+        "Departement_ID": 1,
+        "type": "Hotel",
+        "Nom": "Royal Oasis",
+        "Adress": "GP95+HG5, Av. Panam\u00e9ricaine, P\u00e9tion-Ville",
+        "Distance": null,
+        "Images": null,
+        "Description": "Cet h\u00f4tel raffin\u00e9 se trouve \u00e0 7 km du mus\u00e9e national d'Ha\u00efti et \u00e0 8 km du monument du bicentenaire et du palais national.\r\nLes chambres \u00e9l\u00e9gantes disposent d'un acc\u00e8s Wi-Fi gratuit, d'une t\u00e9l\u00e9vision \u00e0 \u00e9cran plat, d'un coin salon et d'une douche avec pommeau \u00e0 effet pluie. Certaines offrent une vue sur la montagne ou le jardin. Les suites comprennent \u00e9galement un espace de vie et arborent des tissus color\u00e9s.\r\n"
+    },
+    {
+        "ID": 3,
+        "Departement_ID": 1,
+        "type": "Hotel",
+        "Nom": "Caribe Hotel",
+        "Adress": "Juvenat 7, Port-au-Prince, Ha\u00efti",
+        "Distance": null,
+        "Images": null,
+        "Description": "Emplacement de la propri\u00e9t\u00e9 Lors de votre s\u00e9jour \u00e0 Karibe Hotel \u00e0 P\u00e9tionville, vous serez \u00e0 moins de 10 minutes en voiture de Galerie Monnin et de Galerie Marassa. Cet h\u00f4tel 4 \u00e9toiles se trouve \u00e0 2,7 km de Galerie d'art Nader et \u00e0 2,9 km de \u00c9glise Saint-Pierre. Pi\u00e8ces Les 147 chambres climatis\u00e9es de l'\u00e9tablissement vous invitent \u00e0 la d\u00e9tente et comprennent des r\u00e9frig\u00e9rateurs et des stations d'accueil iPod."
+    },
+    {
+        "ID": 4,
+        "Departement_ID": 1,
+        "Nom": "NH Haiti El Rancho",
+        "type": "Hotel",
+        "Adress": " Rue Jose Marti, 5 , Port-au-Prince, Ha\u00efti",
+        "Distance": null,
+        "Images": null,
+        "Description": "L\u2019h\u00f4tel NH Ha\u00efti El Rancho est un \u00e9tablissement luxueux situ\u00e9 au c\u0153ur de P\u00e9tion-Ville, \u00e0 7 km du centre de Port-au-Prince. C\u2019est le v\u00e9ritable c\u0153ur de la capitale d\u2019Ha\u00efti, o\u00f9 se situent la plupart des h\u00f4tels, ambassades et restaurants. Pour les voyageurs d\u2019affaires, le centre de convention Karibe est \u00e0 seulement 2 km."
+    },
+    {
+        "ID": 5,
+        "Departement_ID": 1,
+        "Nom": " Servotel",
+        "type": "Hotel",
+        "Adress": "HPF7+VQW, Route de l'A\u00e9roport, Port-au- Prince",
+        "Distance": null,
+        "Images": null,
+        "Description": "Situ\u00e9 dans un quartier arbor\u00e9, cet h\u00f4tel simple est install\u00e9 dans un b\u00e2timent en acier r\u00e9sistant aux tremblements de terre. Il se trouve \u00e0 2 km du terminal principal de l'a\u00e9roport de Port-au-Prince et \u00e0 9 km du mus\u00e9e du Panth\u00e9on national ha\u00eftien."
+    },
+    {
+        "ID": 6,
+        "Departement_ID": 1,
+        "type": "Hotel",
+        "Nom": "H\u00f4tel Villa Th\u00e9r\u00e8se",
+        "Adress": "3 rue Leon Nau Nerette, P\u00e9tion-Ville 6140 ",
+        "Distance": null,
+        "Images": null,
+        "Description": "Situ\u00e9 dans une rue r\u00e9sidentielle paisible, cet h\u00f4tel simple se trouve \u00e0 7 km du mus\u00e9e national d'Ha\u00efti, \u00e0 8 km du march\u00e9 public en Fer et \u00e0 10 km de l'a\u00e9roport international Toussaint-Louverture. \r\nEmpreintes d'une atmosph\u00e8re d\u00e9contract\u00e9e, les chambres climatis\u00e9es comprennent le Wi-Fi, la t\u00e9l\u00e9vision par c\u00e2ble, une salle de bain attenante, ainsi qu'un balcon ou une terrasse offrant une vue sur la piscine ou la cour. La suite \u00e0 1 chambre dispose en outre d'un espace de vie et repas s\u00e9par\u00e9.\r\nUn petit-d\u00e9jeuner continental et un parking sont propos\u00e9s. L'\u00e9tablissement poss\u00e8de une cour int\u00e9rieure luxuriante, un restaurant avec terrasse et une piscine ext\u00e9rieure bord\u00e9e de chaises longues.\r\n"
+    },
+    {
+        "ID": 7,
+        "Departement_ID": 1,
+        "type": "Hotel",
+        "Nom": "Palm Inn H\u00f4tel",
+        "Adress": "#3 , Hatte3, Delmas 31, Port-au-Prince 6120",
+        "Distance": null,
+        "Images": null,
+        "Description": "Situ\u00e9 dans un jardin fleuri agr\u00e9ment\u00e9 de palmiers et de cocotiers, cet h\u00f4tel de style d\u00e9contract\u00e9 se trouve \u00e0 2 km de l'a\u00e9roport international de Port-au-Prince. Le mus\u00e9e du Panth\u00e9on national ha\u00eftien et les vestiges de la cath\u00e9drale Notre-Dame sont tous deux \u00e0 7 km."
+    },
+    {
+        "ID": 8,
+        "Departement_ID": 1,
+        "type": "Restaurent",
+        "Nom": "Tabarre's Palace",
+        "Adress": "HP9R+PG5, Port-au-Prince",
+        "Distance": null,
+        "Images": null,
+        "Description": "L'h\u00f4tel Tabarre 'S Palace est situ\u00e9 \u00e0 Port-au-Prince et propose un h\u00e9bergement r\u00e9serv\u00e9 aux adultes avec un restaurant, un bar et une terrasse. L'\u00e9tablissement dispose d'une piscine int\u00e9rieure, de divertissements en soir\u00e9e et d'un service d'\u00e9tage.\r\nToutes les chambres comprennent une armoire. Tous les logements sont climatis\u00e9s et disposent d'un coffre-fort et d'une t\u00e9l\u00e9vision \u00e0 \u00e9cran plat. Un petit d\u00e9jeuner continental ou un petit d\u00e9jeuner anglais/irlandais complet est servi \u00e0 l'Hotel Tabarre 'S Palace.\r\n\r\nTraduit avec www.DeepL.com/Translator (version gratuite)"
+    },
+    {
+        "ID": 9,
+        "Departement_ID": 1,
+        "type": "Hotel",
+        "Nom": "La Lorraine Boutique H\u00f4tel",
+        "Adress": "36 Rue Clerveaux, P\u00e9tion-Ville",
+        "Distance": null,
+        "Images": null,
+        "Description": "Profitez de l'ambiance r\u00e9sidentielle d'un manoir des ann\u00e9es 1950 r\u00e9cemment r\u00e9nov\u00e9 avec tous les agr\u00e9ments d'un h\u00f4tel de charme. Avec son environnement accueillant et son personnel amical, chaque client est trait\u00e9 comme un membre de la famille. Nos 13 chambres au design et \u00e0 la d\u00e9coration uniques sont toutes dot\u00e9es d'\u00e9quipements de pointe tels que le Wi-Fi gratuit, la climatisation, une t\u00e9l\u00e9vision \u00e0 \u00e9cran plat et un coffre-fort. L'h\u00f4tel est situ\u00e9 au c\u0153ur de P\u00e9tion-Ville, un important quartier commer\u00e7ant et d'affaires, et \u00e0 quelques pas de certains des meilleurs restaurants de Port-au-Prince. \u00c0 La Lorraine, nous nous efforcerons toujours de d\u00e9passer vos attentes et de rendre votre s\u00e9jour m\u00e9morable. Notre objectif est de faire rapidement de l'h\u00f4tel votre petite oasis, votre maison loin de chez vous lorsque vous \u00eates en Ha\u00efti."
+    },
+    {
+        "ID": 10,
+        "Departement_ID": 1,
+        "type": "Hotel",
+        "Nom": "Elite Hotel",
+        "Adress": "HP82+JJQ, Rue Jacques 1er, Port-au-Prince",
+        "Distance": null,
+        "Images": null,
+        "Description": "La recherche du petit h\u00f4tel familial id\u00e9al \u00e0 Port-au-Prince ne doit pas \u00eatre compliqu\u00e9e. Bienvenue \u00e0 l'Elite Hotel Haiti, un choix fantastique pour les voyageurs comme vous.\r\nEn s\u00e9journant \u00e0 l'Elite Hotel Haiti, vous pourrez visiter Papillon Enterprise (2,3 km) et Marche de Fer (5,0 km), qui sont quelques-unes des principales attractions de Port-au-Prince.\r\nElite Hotel Haiti est un petit h\u00f4tel familial qui dispose de l'air conditionn\u00e9, d'une kitchenette et d'un r\u00e9frig\u00e9rateur dans les chambres, et il est facile de rester connect\u00e9 pendant votre s\u00e9jour car il offre le wifi aux clients."
+    },
+    {
+        "ID": 11,
+        "Departement_ID": 2,
+        "type": "Restaurent",
+        "Nom": "Hollanda hotel restaurant",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Pour votre s\u00e9jour \u00e0 la plage \u00e0 Jacmel, misez sur Rollanda Hotel Restaurant. Vous pourrez vous faire chouchouter gr\u00e2ce \u00e0 des massages, des enveloppements corporels et un service de manucure et p\u00e9dicure agr\u00e9ables, tandis que pour une d\u00e9ferlante de fun, vous pourrez compter sur la piscine ext\u00e9rieure. Les options de restauration comprennent 20 restaurants, tandis que le bar/salon est un endroit parfait pour prendre un verre. Parmi les autres petits avantages de cet \u00e9tablissement figurent 20 caf\u00e9s, une discoth\u00e8que et une terrasse sur le toit. Le personnel attentionn\u00e9 et l'acc\u00e8s facile \u00e0 pied remportent un vif succ\u00e8s aupr\u00e8s des autres voyageurs."
+    },
+    {
+        "ID": 12,
+        "Departement_ID": 2,
+        "type": "Restaurent",
+        "Nom": "H\u00f4tel Restaurant Cyvadier Plage",
+        "Adress": "Route D\u00e9partmentale 41 Jacmel, 9110",
+        "Distance": null,
+        "Images": null,
+        "Description": ": Pour un s\u00e9jour de premier choix \u00e0 Jacmel, H\u00f4tel Restaurant Cyvadier Plage met \u00e0 votre disposition une navette d'a\u00e9roport. Au cours de votre s\u00e9jour, donnez-vous en \u00e0 c\u0153ur joie entre des massages. Une fois bien d\u00e9tendu, vous savourerez d'autant mieux les d\u00e9lices qui vous attendent au restaurant. Une piscine ext\u00e9rieure, un bar / salon et une terrasse figurent \u00e9galement parmi les petits plus offerts. Le personnel attentionn\u00e9 et la connexion Wi-Fi remportent un vif succ\u00e8s aupr\u00e8s des autres voyageurs."
+    },
+    {
+        "ID": 13,
+        "Departement_ID": 2,
+        "type": "Hotel",
+        "Nom": "Maxanika",
+        "Adress": "6F7J+X8C, Cap Marechaux, Arrondissement de Jacmel 9130",
+        "Distance": null,
+        "Images": null,
+        "Description": "Contemplez les vues qui s'offrent \u00e0 vous depuis la terrasse sur le toit au cours de votre s\u00e9jour dans Maxanika. \u00c0 la piscine ext\u00e9rieure, vous nagerez litt\u00e9ralement dans le bonheur. Vous pourrez aussi vous faire plaisir \u00e0 l'\u00e9tablissement Table d'h\u00f4tes, qui vous accueille pour le d\u00e9jeuner et le d\u00eener \u00e0 grand renfort de sp\u00e9cialit\u00e9s de la cuisine locale. Parmi les autres petits avantages de cet \u00e9tablissement figurent une terrasse et un jardin."
+    },
+    {
+        "ID": 14,
+        "Departement_ID": 2,
+        "type": "Museum",
+        "Nom": "Moulin Price ",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Le moulin Price est l\u2019un des toutes premi\u00e8res machines \u00e0 vapeur construites selon les inventions de James Watt des ann\u00e9es 1780. Ce type de machine fut la source dL\u00e9nergie principale de la R\u00e9volution indus- trielle balbutiante, dont elle a consid\u00e9rablement accru la capacit\u00e9 de production."
+    },
+    {
+        "ID": 15,
+        "Departement_ID": 2,
+        "type": "Museum",
+        "Nom": "Alliances fran\u00e7aises",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Les Alliances fran\u00e7aises sont des associations de droit local qui dispensent des cours de langue et s\u2019impliquent activement dans la vie culturelle et \u00e9ducative. En Ha\u00efti elles sont au nombre de 5 dont l\u2019un a jacmel et veillent \u00e0 d\u00e9mocratiser le fran\u00e7ais tout en d\u00e9fendant l\u2019excellence acad\u00e9mique. Des \u00e9v\u00e8nements sont r\u00e9guli\u00e8rement organis\u00e9s dans les \u00e9tablissements et leur r\u00e9gion."
+    },
+    {
+        "ID": 16,
+        "Departement_ID": 2,
+        "type": "Museum",
+        "Nom": "Fort Og\u00e9",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "\u00c0 l'\u00e9poque o\u00f9 Ha\u00efti arrachait son ind\u00e9pendance \u00e0 la classe sup\u00e9rieure coloniale esclavagiste, des chefs de la r\u00e9sistance comme Jean-Jacques Dessalines ont ordonn\u00e9 la construction de forts dans tous les territoires lib\u00e9r\u00e9s, afin d'offrir un refuge s\u00fbr aux personnes nouvellement lib\u00e9r\u00e9es et de d\u00e9courager les contre-offensives, au cas o\u00f9 les Fran\u00e7ais reviendraient et essaieraient de reprendre l'\u00eele. Cette \u00e9poque est connue sous le nom de fortification d'Ha\u00efti, et le Fort Og\u00e9, construit en 1804, est l'un des 20 sites militaires fortifi\u00e9s pendant cette p\u00e9riode. Fort Og\u00e9 a \u00e9t\u00e9 nomm\u00e9 en l'honneur de Vincent Og\u00e9, l'un des r\u00e9volutionnaires ha\u00eftiens les plus populaires."
+    },
+    {
+        "ID": 17,
+        "Departement_ID": 2,
+        "type": "Beach",
+        "Nom": "Bassin Bleu",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Le Bassin Bleu, \u00e9galement appel\u00e9 \u00ab Basenbl\u00e9 \u00bb par les Ha\u00eftiens, est un site naturel qui se situe non loin de la ville de Jacmel, dans la partie sud-est de la R\u00e9publique d\u2019Ha\u00efti. Longeant la Petite Rivi\u00e8re de Jacmel, il comporte en r\u00e9alit\u00e9 quatre petits bassins diff\u00e9rents, ainsi qu\u2019une chute d\u2019eau plus spectaculaire. Alors, que diriez-vous de d\u00e9couvrir ce d\u00e9cor idyllique ?"
+    },
+    {
+        "ID": 18,
+        "Departement_ID": 2,
+        "type": "Museum",
+        "Nom": "Gouffre Sejourn\u00e9 ",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Terre montagneuse qui offre de tr\u00e8s beaux paysages, de grottes, de gouffres, de chutes d\u2019eaux, de bassins, de plages et d\u2019art na\u00eff tr\u00e8s color\u00e9 il y a autant de raison \u00e0 les appr\u00e9cier. Gouffre Sejourn\u00e9 avec ses 130 m\u00e8tres de long et 167 m\u00e8tres de profondeurs reste l\u2019une des attractions touristiques dans le d\u00e9partement du Sud Est qui m\u00e9rite d\u2019\u00eatre visiter m\u00eame s\u2019il reste tr\u00e8s dangereux. Incroyable mais vrai ce trou vertical impressionnant par sa largeur et sa longueur est un site myst\u00e9rieux qui se trouve entre la commune de La Vall\u00e9e et de Grand-Go\u00e2ve reste entre imaginaire et r\u00e9alit\u00e9 une v\u00e9ritable beaut\u00e9 d\u2019un univers souterrain m\u00e9connu du grand public."
+    },
+    {
+        "ID": 19,
+        "Departement_ID": 2,
+        "type": "Beach",
+        "Nom": "Les chutes de letan ",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Voulez-vous profiter d\u2019un randonn\u00e9e p\u00e9destre pour explorer LETAN ce site naturel qui se compose de plusieurs magnifiques bassins qui s\u2019\u00e9talent le long de la rivi\u00e8re de La Vall\u00e9e. Gros bassin, bassin la fum\u00e9e, bassin canari, bassin deux dalles, bassin Marie Jeanne restent toujours tr\u00e8s attrayants par leurs charmes et de diff\u00e9rentes chutes qui coulent dedans, c\u2019est un tr\u00e9sor que nous r\u00e9serve la nature. Letan se trouve dans la deuxi\u00e8me section de Ternier commune de La Vall\u00e9e de Jacmel dans la localit\u00e9 de Dur\u00e9 non loin de Morne \u00e0 Br\u00fbler \u00e0 environ 8 kilom\u00e8tres du centre-ville. Vous pouvez profiter de la fra\u00eecheur de la v\u00e9g\u00e9tation luxuriante car l\u2019intimit\u00e9 de ce site donne l\u2019impression que c\u2019est un paradis terrestre car il reste id\u00e9al pour une s\u00e9ance de photo shoot."
+    },
+    {
+        "ID": 20,
+        "Departement_ID": 2,
+        "type": "Beach",
+        "Nom": "Raymond Les Bains, Cayes-Jacmel",
+        "Adress": "6HGM+MQ5, Arrondissement de Jacmel",
+        "Distance": null,
+        "Images": null,
+        "Description": "Si vous soulev\u00e9 voir du monde, Raymond les bains offre une plage o\u00f9 il fait bon vivre, quelques musiciens y jouent de la musique et on y trouve quelques vendeurs de bon poisson, des langoustes, etc."
+    },
+    {
+        "ID": 21,
+        "Departement_ID": 3,
+        "type": "Beach",
+        "Nom": " Labadee",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "De rutilants bateaux de croisi\u00e8re accostent depuis d\u00e9but 2000 \u00e0 ce paradis baln\u00e9aire o\u00f9 d\u00e9barquent des touristes par milliers. Labadee est devenu, en quelques ann\u00e9es, l\u2019une des destinations  touristiques les plus pris\u00e9es dans la cara\u00efbes.  Un v\u00e9ritable oasis."
+    },
+    {
+        "ID": 22,
+        "Departement_ID": 3,
+        "type": "Beach",
+        "Nom": "Cormier",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "si vous optez pour un logement \u00e0 Cap-Ha\u00eftien, ne ratez pas la plage de Cormier ! Son paysage luxuriant donne sur une mer calme et \u00e9tincelante. Dans un environnement apaisant, la plage de Cormier vient se nicher au pied d\u2019une colline. Depuis sa rive, il est \u00e9galement possible de s\u2019offrir une petite vir\u00e9e en mer pour d\u00e9couvrir la splendeur des fonds marins ha\u00eftiens."
+    },
+    {
+        "ID": 23,
+        "Departement_ID": 3,
+        "type": "Museum",
+        "Nom": "Lakou Breda (Haut du Cap)",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "C\u2019est l\u00e0 que pr\u00e9curseur de la r\u00e9volution ha\u00eftienne, le lib\u00e9rateur des noirs, Toussaint Louverture, est n\u00e9. Il est situ\u00e9 \u00e0 4 kilom\u00e8tres de la ville, ce haut lieu historique habit\u00e9 un luxueux h\u00f4tel qui porte le m\u00eame nom, construit par l\u2019entrepreneur H\u00e9rold D\u00e9cius, en l\u2019honneur de ce grand personnage de l\u2019histoire de la lutte contre l\u2019esclavage."
+    },
+    {
+        "ID": 24,
+        "Departement_ID": 3,
+        "type": "Hotel",
+        "Nom": "H\u00f4tel Mont Joli",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Un des plus cot\u00e9s et plus visit\u00e9s dans le Nord, Mont Joli donne une surplombante vue sur la ville et sur la mer."
+    },
+    {
+        "ID": 25,
+        "Departement_ID": 3,
+        "type": "Hotel",
+        "Nom": "H\u00f4tel Satama",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Id\u00e9al pour un d\u00eener en t\u00eate. Pour une c\u00e9l\u00e9bration d\u2019anniversaire. L\u2019atmosph\u00e8re est calme, propice \u00e0 l\u2019\u00e9coute d\u2019un r\u00e9pertoire gonfl\u00e9 de bossa-nova ou de pop douce, du genre Witney Houston ou Lala Hathaway. "
+    },
+    {
+        "ID": 26,
+        "Departement_ID": 3,
+        "type": "Museum",
+        "Nom": "Palais Sans-souci",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "La prochaine destination pour votre randonn\u00e9e ne saurait \u00eatre autre que le palais Sans Souci, ce vieux ch\u00e2teau datant de l\u2019\u00e9poque coloniale. Site touristique situ\u00e9 \u00e0 Milot, Sans Souci est sans contexte le symbole d\u2019une fiert\u00e9 non seulement capoise mais aussi nationale."
+    },
+    {
+        "ID": 27,
+        "Departement_ID": 3,
+        "type": "Museum",
+        "Nom": "Citadelle Laferri\u00e8re",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Epoustouflante, miraculeuse fortification construire sous Henry Christophe. \u00c9lev\u00e9e \u00e0 900 m\u00e8tres d\u2019altitude, elle est la plus grande forteresse et la plus prestigieuse de toute la cara\u00efbe. Cette forteresse a \u00e9t\u00e9 construite apr\u00e8s l\u2019ind\u00e9pendance dans le but principal de d\u00e9fendre la partie nord de l\u2019\u00eele contre un \u00e9ventuel retour des Fran\u00e7ais. C\u2019est l\u00e0 que le rappeur am\u00e9ricain Jason Derulo a tourn\u00e9 une partie de son clip \u00ab Colors \u00bb pour la grande compagnie Coca Cola dans le cadre de la Coupe du Monde de 2018 d\u00e9roul\u00e9e en Russie."
+    },
+    {
+        "ID": 28,
+        "Departement_ID": 3,
+        "type": "Museum",
+        "Nom": "Bois-Ca\u00efman",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "C\u2019est un lieu retir\u00e9 et recul\u00e9 de l\u2019habitation Lenormand de M\u00e9zy situ\u00e9e dans la plaine du Nord, \u00e0 quelques kilom\u00e8tres de la ville du Cap-Haitien. C\u2019est l\u00e0 que s\u2019est tenue la c\u00e9r\u00e9monie du 14 ao\u00fbt 1791, \u00e9v\u00e8nement historique et d\u2019importance capitale pour la bataille de la r\u00e9volution. "
+    },
+    {
+        "ID": 29,
+        "Departement_ID": 3,
+        "type": "Restaurent",
+        "Nom": "Lakay restaurant",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Philipe Z\u00e9phir a implant\u00e9, depuis plus de dix ans, Lakay Bar Restaurant au c\u0153ur du Boulevard, face au bord de mer. L\u2019un des plus beaux, sinon le plus populaire restaurant o\u00f9 d\u00e9guster un succulent met local, o\u00f9 siroter un d\u00e9licieux rhum punch sous les cocotiers, tout en profitant de l\u2019ambiance festive et musicale qui est offerte au menu. "
+    },
+    {
+        "ID": 30,
+        "Departement_ID": 3,
+        "type": "Museum",
+        "Nom": "Cath\u00e9drale Notre-Dame du Cap-Ha\u00eftien",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "La cath\u00e9drale Notre-Dame-de-l'Assomption est une cath\u00e9drale catholique situ\u00e9e \u00e0 Cap-Ha\u00eftien, en Ha\u00efti. Elle est le si\u00e8ge de l\u2019archev\u00eaque de l'Archidioc\u00e8se de Cap-Ha\u00eftien. "
+    },
+    {
+        "ID": 31,
+        "Departement_ID": 4,
+        "type": "Museum",
+        "Nom": "Fort la Bouque ",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "El\u00e9ment du syst\u00e8me d\u00e9fensif colonial fran\u00e7ais. Construit en 1736, sur les vestiges d\u2019une Batterie espagnole \u00e0 l\u2019entr\u00e9e de la baie (pointe du Fort Espagnol), le fort se pr\u00e9sente sous la forme d\u2019un carr\u00e9 flanqu\u00e9 de deux bastions d\u2019angle de forme circulaire, c\u00f4t\u00e9 mer, et en ligne bris\u00e9e, c\u00f4t\u00e9 terre. Au centre, un r\u00e9duit, entour\u00e9 d\u2019un foss\u00e9 sec, jouait le r\u00f4le de cavalier et logeait le ma\u00eetre canonnier. Sous le terre-plein, un passage vo\u00fbt\u00e9 pourvu de meurtri\u00e8res permettait de tirer \u00e0 revers sur les assaillants. Ce fort fut transform\u00e9 en prison sous le r\u00e8gne de l\u2019empereur Faustin 1er."
+    },
+    {
+        "ID": 32,
+        "Departement_ID": 4,
+        "type": "Museum",
+        "Nom": "Batterie de l\u2019Anse",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "\u00c9l\u00e9ment du syst\u00e8me d\u00e9fensif colonial fran\u00e7ais. Sur la c\u00f4te Est du canal d\u2019acc\u00e8s \u00e0 la baie de Fort-Libert\u00e9. La Batterie de l\u2019Anse situ\u00e9e apr\u00e8s le Fort Labouque a \u00e9t\u00e9 construite pendant la guerre de 1756. Cette batterie est consid\u00e9r\u00e9e comme la vraie d\u00e9fense du goulet (canal d\u2019entr\u00e9e de la baie) parce que chaque b\u00e2timent est forc\u00e9 de se pr\u00e9senter \u00e0 son feu, de mani\u00e8re \u00e0 en \u00eatre enfil\u00e9. (Moreau de Saint-M\u00e9ry). L\u2019ouvrage simple est compos\u00e9 d\u2019un parapet en ligne bris\u00e9e du c\u00f4t\u00e9 terre par un glacis. Son \u00e9quipement se limite \u00e0 un petit magasin \u00e0 poudre et des b\u00e2timents de logements pour la garnison.  Aujourd\u2019hui, hormis la poudri\u00e8re, de ces constructions, il ne reste que les fondations. La ma\u00e7onnerie au niveau du front de mer est en assez bon \u00e9tat."
+    },
+    {
+        "ID": 33,
+        "Departement_ID": 4,
+        "type": "Museum",
+        "Nom": "Fort Dauphin",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "El\u00e9ment du syst\u00e8me d\u00e9fensif colonial fran\u00e7ais, le fort Dauphin fut construit en 1730, achev\u00e9 en 1735 \u00e0 l\u2019exception des merlons et des plateformes de batteries (termin\u00e9s de 1741 \u00e0 1743). Le fort Dauphin est d\u00e9crit comme une enceinte de trois bastions. Elev\u00e9 sur un roc triangulaire, il domine la baie et la mer au -del\u00e0 du goulet. De ce fait, il avait l\u2019avantage de ne pouvoir \u00eatre battu d\u2019aucun point de la c\u00f4te. "
+    },
+    {
+        "ID": 34,
+        "Departement_ID": 4,
+        "type": "Museum",
+        "Nom": "Cath\u00e9drale Saint Joseph",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "T\u00e9moin de l\u2019architecture civile coloniale fran\u00e7aise. Cette \u00e9glise \u00e9tait l\u2019une des plus sont belles de Saint Domingue. Elle est l\u2019invocation de passent Saint-Joseph et mesure 104 pied de long et 40 pied de large. L\u2019\u00e9difice est termin\u00e9 en cul de four dans sa partie post\u00e9rieure. Au-devant se trouve un perron de quatre marches. "
+    },
+    {
+        "ID": 35,
+        "Departement_ID": 4,
+        "type": "Museum",
+        "Nom": "Ancienne fontaine coloniale",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Ancienne fontaine sur la grand-rue, construite en pierres de taille import\u00e9es de France, elle est aujourd\u2019hui peinte en rouge et encastr\u00e9e entre des maisons."
+    },
+    {
+        "ID": 36,
+        "Departement_ID": 4,
+        "type": "Hotel",
+        "Nom": "Extravaganza resort hotel",
+        "Adress": "Route National #6 Rue Ferdinand, Trou-du-Nord",
+        "Distance": null,
+        "Images": null,
+        "Description": "Extravaganza Resort Hotel est un choix excellent pour un s\u00e9jour \u00e0 Trou-du-Nord. Apr\u00e8s avoir profit\u00e9 de la piscine ext\u00e9rieure, vous pourrez reprendre des forces au caf\u00e9 ou vous d\u00e9tendre autour d'un verre dans l'un des 2 bars/salons. Au menu des petits plus offerts sur place, on trouve une salle de fitness ouverte 24 h/24, un snack bar / \u00e9picerie fine et un jardin. "
+    },
+    {
+        "ID": 37,
+        "Departement_ID": 4,
+        "type": "Hotel",
+        "Nom": "La Belle Maison Milot",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Situ\u00e9 \u00e0 Samson, l'\u00e9tablissement La Belle Maison poss\u00e8de un restaurant \u00e0 la carte. Vous pourrez profiter gratuitement d'une connexion Wi-Fi et d'un parking priv\u00e9."
+    },
+    {
+        "ID": 38,
+        "Departement_ID": 4,
+        "type": "Hotel",
+        "Nom": "Marien Hotels & Resorts",
+        "Adress": "M52F+CRQ, Unnamed Road, Fort Liberte",
+        "Distance": null,
+        "Images": null,
+        "Description": "Dot\u00e9 d'un stockage des bagages, d'un salon de coiffure et d'un kiosque \u00e0 journaux, Le Marien Hotels & Resorts offre un h\u00e9bergement \u00e0 Fort Libert\u00e9, \u00e0 41 km de Cap-Ha\u00eftien. Il y a 65 chambres. Il y a des services de transfert \u00e0 l'a\u00e9roport, des services de nettoyage \u00e0 sec et des services de conciergerie au domaine."
+    },
+    {
+        "ID": 39,
+        "Departement_ID": 4,
+        "type": "Hotel",
+        "Nom": "Mountain View Hotel and Bar Restaurant",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Situ\u00e9 \u00e0 Cap-Ha\u00eftien, le Mountain View Hotel and Bar Restaurant poss\u00e8de un jardin, un salon commun, une terrasse et un restaurant. L'h\u00f4tel dispose d'une piscine int\u00e9rieure, d'un karaok\u00e9 et d'un service d'\u00e9tage.\r\nLes chambres sont \u00e9quip\u00e9es de la climatisation et certaines poss\u00e8dent un balcon.\r\n\r\nLe Mountain View Hotel and Bar Restaurant sert un petit-d\u00e9jeuner am\u00e9ricain.\r\n\r\nL'a\u00e9roport international de Cap-Ha\u00eftien, le plus proche, est implant\u00e9 \u00e0 7 km. Un service de navette a\u00e9roport peut \u00eatre assur\u00e9 moyennant des frais suppl\u00e9mentaires."
+    },
+    {
+        "ID": 40,
+        "Departement_ID": 4,
+        "type": "Hotel",
+        "Nom": "Habitation des Lauriers",
+        "Adress": "44,3 km de Nord-Est Department\r\nN\u00ba 1 sur 29 chambres d'h\u00f4tes \u00e0 Cap-Ha\u00eftien\r\n",
+        "Distance": null,
+        "Images": null,
+        "Description": "L'Habitation Des Lauriers propose un h\u00e9bergement \u00e0 Cap-Ha\u00eftien. Vous pourrez profiter du bar et du restaurant de l'\u00e9tablissement. Un parking priv\u00e9 gratuit est disponible sur place.\nChaque chambre est \u00e9quip\u00e9e d'une salle de bains privative. Certaines chambres ont acc\u00e8s \u00e0 un balcon. Les chambres sup\u00e9rieures et standard sont climatis\u00e9es et disposent d'une t\u00e9l\u00e9vision \u00e0 \u00e9cran plat avec cha\u00eenes satellite et d'une connexion Wi-Fi gratuite. \nUn service de navette est disponible moyennant un suppl\u00e9ment. L'a\u00e9roport international du Cap-Ha\u00eftien se trouve \u00e0 3,1 km.\n\n"
+    },
+    {
+        "ID": 41,
+        "Departement_ID": 5,
+        "type": "Museum",
+        "Nom": "Muse\u00b4e Ogier-Fombrun ",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Le Muse\u00b4e Ogier-Fombrun est situ\u00e9 pre`s du village de Montrouis, dans l\u2019enceinte d\u2019une habitation sucrie`re datant du 18e`me sie`cle, construite en 1760 par le colon bordelais Guillaume Ogier, et abandonne\u00b4e a` sa mort en 1799, durant la pe\u00b4riode re\u00b4volutionnaire."
+    },
+    {
+        "ID": 42,
+        "Departement_ID": 5,
+        "type": "Hotel",
+        "Nom": "Royal Decameron",
+        "Adress": "Route Nationale #1, Km 78, Saint-Marc",
+        "Distance": null,
+        "Images": null,
+        "Description": ": Envie de d\u00e9tente les pieds dans l'eau ? Royal Decameron Indigo - All Inclusive se trouve au bord d'une plage o\u00f9 vous pourrez vous adonner au volley ou prendre le soleil sur une chaise longue. Petit plus appr\u00e9ciable, vous vous adonnerez sur place \u00e0 la planche \u00e0 voile, \u00e0 la voile et au kayak. Les 2 piscines ext\u00e9rieures vous permettront de passer des moments de d\u00e9tente, tandis que ceux souhaitant se faire chouchouter pourront profiter des massages, des soins du visage et des soins d'aromath\u00e9rapie. Les options de restauration comprennent 3 restaurants, tandis que les 2 bars en bord de piscine vous invitent \u00e0 siroter des boissons rafra\u00eechissantes. Cet h\u00e9bergement tout inclus abrite en outre 4 bars/lounges, une discoth\u00e8que et un club pour enfants (gratuit). Les autres voyageurs sont enchant\u00e9s par la piscine rafra\u00eechissante et le personnel attentionn\u00e9.\r\n\r\n"
+    },
+    {
+        "ID": 43,
+        "Departement_ID": 5,
+        "type": "Beach",
+        "Nom": "Wahoo Bay Beach Club & Resort ",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Wahoo Bay Beach Club & Resort est un lieu de d\u00e9tente nich\u00e9 au bord d'une agr\u00e9able plage o\u00f9 vous profiterez de parasols. Une piscine ext\u00e9rieure est \u00e0 votre disposition pour un agr\u00e9able moment de d\u00e9tente, tandis que ceux souhaitant se faire dorloter pourront profiter des massages. Le restaurant est id\u00e9al pour manger un bout, \u00e0 moins que vous ne pr\u00e9f\u00e9riez prendre une boisson fraiche au bar/salon. La piscine rafra\u00eechissante et le personnel attentionn\u00e9 remportent un vif succ\u00e8s aupr\u00e8s des autres voyageurs."
+    },
+    {
+        "ID": 44,
+        "Departement_ID": 5,
+        "type": "Museum",
+        "Nom": "Toussaint Louverture statue ",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": null
+    },
+    {
+        "ID": null,
+        "Departement_ID": null,
+        "Nom": null,
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": null
+    },
+    {
+        "ID": 45,
+        "Departement_ID": 5,
+        "type": "Museum",
+        "Nom": "Place Bouteille ",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Le parc de la bouteille est situ\u00e9 au centre de la ville, entre la rue Louverture et la route nationale n\u00b0 1. La pi\u00e8ce ma\u00eetresse du parc est une sculpture repr\u00e9sentant une bouteille verte. Cette structure est construite en briques et poss\u00e8de un sommet blanc qui repr\u00e9sente le bouchon d'une bouteille. Tous les chemins du parc m\u00e8nent \u00e0 la bouteille. Il y a quelques bancs et des zones couvertes o\u00f9 l'on peut s'asseoir et se d\u00e9tendre. Le parc avait besoin d'\u00eatre r\u00e9par\u00e9 et \u00e9tait jonch\u00e9 d'ordures. C'est d\u00e9cevant car c'est le site historique o\u00f9 la d\u00e9claration d'ind\u00e9pendance d'Ha\u00efti a \u00e9t\u00e9 \u00e9crite le 31 d\u00e9cembre 1803."
+    },
+    {
+        "ID": 46,
+        "Departement_ID": 5,
+        "type": "Museum",
+        "Nom": "Madan Kolo ",
+        "Adress": "C8W6+F87, Les Gona\u00efves",
+        "Distance": null,
+        "Images": null,
+        "Description": "Inaugur\u00e9e le 15 janvier 1862 et b\u00e9nie par le P\u00e8re Pascal, la fontaine de Madame Colo\u201d plac\u00e9e \u00e0 l\u2019intersection des rues du Bel-Air et du Peuple est form\u00e9e d\u2019une colonne cannel\u00e9e en fonte servant de socle \u00e0 une statue \u00e9galement en fonte repr\u00e9sentant une femme.\r\nOn associa cette statue \u00e0 la d\u00e9esse de la libert\u00e9, mais par la suite les riverains la renomm\u00e8rent \u201cFontaine Madame Colo.\r\nSelon G\u00e9rard Jolibois, ce surnom proviendrait d\u2019une \u00e9pici\u00e8re nomm\u00e9e Clorinde, elle-m\u00eame surnomm\u00e9e Madame Colo, qui fut tr\u00e8s populaire dans ce quartier et r\u00e9sida pr\u00e9cis\u00e9ment sur ce croisement de rues.\r\n"
+    },
+    {
+        "ID": 47,
+        "Departement_ID": 5,
+        "type": "Beach",
+        "Nom": "Gonaives Beach",
+        "Adress": "F823+34M, Les Gona\u00efves",
+        "Distance": null,
+        "Images": null,
+        "Description": "La plage se trouve dans la partie ouest de la ville. Elle est situ\u00e9e dans le secteur industriel, puisque le port de marchandises et la compagnie d'\u00e9lectricit\u00e9 se trouvent \u00e9galement dans cette zone. L'entr\u00e9e de la plage se trouve \u00e0 l'extr\u00e9mit\u00e9 nord de la rue Du Qual. Il y a deux grands portails en m\u00e9tal bleu avec des dessins de poissons en m\u00e9tal. Il n'y a pas de droit d'entr\u00e9e, j'ai donc franchi les grilles et je me suis dirig\u00e9 vers la plage. Il y a neuf zones ombrag\u00e9es o\u00f9 l'on peut se d\u00e9tendre et admirer la vue sur la baie de Car\u00e9nage et les montagnes au-del\u00e0."
+    },
+    {
+        "ID": 48,
+        "Departement_ID": 5,
+        "type": "Museum",
+        "Nom": "Memorial de l\u2019independance ",
+        "Adress": "Rue Liberte, Les Gona\u00efves",
+        "Distance": null,
+        "Images": null,
+        "Description": "Le M\u00e9morial de l'Ind\u00e9pendance est situ\u00e9 \u00e0 l'intersection des rues Libert\u00e9 et Louverture. L'entr\u00e9e principale se trouve sur la rue Libert\u00e9, et au-dessus de l'entr\u00e9e se trouvent les mots \"M\u00e9morial de l'Ind\u00e9pendance\"."
+    },
+    {
+        "ID": 49,
+        "Departement_ID": 5,
+        "type": "Museum",
+        "Nom": "Premiere Eglise Baptiste des Gonaives ",
+        "Adress": "C8X5+9CP, Rue Clerveau, Gonaives",
+        "Distance": null,
+        "Images": null,
+        "Description": "La 1\u00e8re \u00e9glise baptiste des Gona\u00efves est un point de rep\u00e8re dans la ville. Il s'agit d'une structure inachev\u00e9e, mais son architecture est unique. L'\u00e9glise est peinte en blanc avec des reflets beiges. Le point fort est le d\u00f4me central avec un clocher en forme de spirale. Ce clocher se termine par une croix dor\u00e9e au sommet. De chaque c\u00f4t\u00e9 du d\u00f4me se trouvent des toits coniques \u00e9galement surmont\u00e9s d'une croix. Les deux menorahs dor\u00e9es qui ornent le d\u00f4me constituent un motif int\u00e9ressant. Les sept branches du menorah repr\u00e9sentent les sept jours de la cr\u00e9ation, et c'est une image que l'on s'attend \u00e0 voir sur un temple juif."
+    },
+    {
+        "ID": 50,
+        "Departement_ID": 5,
+        "type": "Museum",
+        "Nom": "Place D\u2019armes de la ville des Gonaives ",
+        "Adress": "C8W5+7MH, Rue Vernet, Les Gona\u00efves",
+        "Distance": null,
+        "Images": null,
+        "Description": "Ce parc est connu par les habitants sous le nom de parc de l'ind\u00e9pendance. Le parc est entour\u00e9 d'une cl\u00f4ture m\u00e9tallique noire et l'entr\u00e9e se trouve rue Vernet. Les couleurs principales du parc sont la mandarine et le vert. La principale attraction du parc se trouve dans la partie ouest. Il s'agit d'un grand ob\u00e9lisque blanc dont la base est occup\u00e9e par une sculpture de Jean-Jacques Dessalines et dont les c\u00f4t\u00e9s sont orn\u00e9s de reliefs. Dessalines se tient debout, un drapeau ha\u00eftien dans la main droite. \u00c0 sa droite et \u00e0 sa gauche se trouvent des reliefs repr\u00e9sentant ses soldats et d'autres combattants locaux. Des chevaux, des femmes et des enfants sont \u00e9galement repr\u00e9sent\u00e9s, ce qui rend le monument repr\u00e9sentatif de tous les Hatiens qui ont r\u00e9sist\u00e9 et se sont battus pour la libert\u00e9. Ce monument est \u00e9galement connu sous le nom de \"monument des indig\u00e8nes\"."
+    },
+    {
+        "ID": 51,
+        "Departement_ID": 6,
+        "type": "Museum",
+        "Nom": "Saut D\u2019eau",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Cette cascade qui rec\u00e8lerait des vertus magiques est situ\u00e9e dans la commune ha\u00eftienne du m\u00eame nom dans l'arrondissement de Mirebalais."
+    },
+    {
+        "ID": 52,
+        "Departement_ID": 6,
+        "type": "Hotel",
+        "Nom": "H\u00f4tel le mirage",
+        "Adress": "Rue Toussaint Louverture 86, Mirebalais 5210 Ha\u00efti",
+        "Distance": null,
+        "Images": null,
+        "Description": "Le Mirage est un h\u00f4tel. Le Mirage est situ\u00e9e \u00e0 proximit\u00e9 de Presbyterain De Eglise et de la petite ville Mirebalais."
+    },
+    {
+        "ID": 53,
+        "Departement_ID": 6,
+        "type": "Restaurent",
+        "Nom": "Nan kafe",
+        "Adress": "Lascahobas bas plateau central Ha\u00efti.",
+        "Distance": null,
+        "Images": null,
+        "Description": "Nan Cafe in the region of Artibonite is located in Haiti - some 22 mi or ( 35 km ) North of Port-au-Prince , the country's capital ."
+    },
+    {
+        "ID": 54,
+        "Departement_ID": 6,
+        "type": "Hotel",
+        "Nom": "Wozo plaza hotel ",
+        "Adress": "3, rte nationale, Ledier, Ha\u00efti ",
+        "Distance": null,
+        "Images": null,
+        "Description": "Le wozo plaza est un h\u00f4tel situ\u00e9 dans une localit\u00e9 appel\u00e9e Ledier. C'est un lieu extraordinaire avec beaucoup d'arbres et surtout du manguier."
+    },
+    {
+        "ID": 55,
+        "Departement_ID": 6,
+        "type": "Hotel",
+        "Nom": "Le jardin h\u00f4tel ",
+        "Adress": "Rue fort anglais 70, Mirebalais ",
+        "Distance": null,
+        "Images": null,
+        "Description": "Endroit agr\u00e9able et paisible pour se reposer \u00e0 Mirebalais"
+    },
+    {
+        "ID": 56,
+        "Departement_ID": 6,
+        "type": "Hotel",
+        "Nom": "La casa guest house",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "La Casa Hotel, est un h\u00f4tel, bel endroit.\r\nSitu\u00e9 \u00e0 Mirebalais, \u00e0 600 m\u00e8tres de la Croix Martyrs, l'\u00e9tablissement LA CASA guest house and bar propose des h\u00e9bergements climatis\u00e9s et un bar.\r\n"
+    },
+    {
+        "ID": 57,
+        "Departement_ID": 6,
+        "type": "Museum",
+        "Nom": "Bassin Zim",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Bassin Zim Est un lieu touristique qui se trouve \u00e0 Hinche \u00e0 la troisi\u00e8me section. C'est une cascade d'eau qui sert de lieu de p\u00e8lerinage pour beaucoup d'adeptes du vaudou. Bassin zim se situe \u00e0 8 km de la ville de Hinche."
+    },
+    {
+        "ID": 58,
+        "Departement_ID": 6,
+        "type": "Hotel",
+        "Nom": "Le roseau H\u00f4tel ",
+        "Adress": "BELLADERE , Ha\u00efti 47, belladere 5320",
+        "Distance": null,
+        "Images": null,
+        "Description": "Le Roseau est un tres bel hotel situe dans la ville de Belladere a 1h et quelques minutes de Mirebalais, dans le departemnt centre"
+    },
+    {
+        "ID": 59,
+        "Departement_ID": 6,
+        "type": "Restaurent",
+        "Nom": "Le Gouter Bar Restaurant",
+        "Adress": "Mirebalais Grand rue #94 Mirebalais, 7410",
+        "Distance": null,
+        "Images": null,
+        "Description": "Bel endroit pour aller rencontrer des gens, s'amuser, musique plus encore"
+    },
+    {
+        "ID": 60,
+        "Departement_ID": 6,
+        "type": "Restaurent",
+        "Nom": "Le saveur restaurant ",
+        "Adress": "Mirebalais, rue Chatul\u00e9e",
+        "Distance": null,
+        "Images": null,
+        "Description": "Facile d'acc\u00e8s, cadre agr\u00e9able, service rapide.\r\nPas loin de l'Hopital Universitaire de Mirebalais. Service rapide, climatis\u00e9, restauration facile...\r\n"
+    },
+    {
+        "ID": 61,
+        "Departement_ID": 7,
+        "type": "Restaurent",
+        "Nom": "Le sommet de Port Salut",
+        "Adress": "3 Rue Bellevue, Port Salut 3762",
+        "Distance": null,
+        "Images": null,
+        "Description": "Offrant une vue sur la ville, le Residences Sommet Port Salut \u00e0 Port-Salut propose des h\u00e9bergements, une piscine ext\u00e9rieure, une salle de sport, un salon commun, une terrasse et un restaurant."
+    },
+    {
+        "ID": 62,
+        "Departement_ID": 7,
+        "type": "Restaurent",
+        "Nom": "Caribbean H\u00f4tel Cayes",
+        "Adress": "Rue Union, Et Rue Auxilius Foug\u00e8re, Les Cayes",
+        "Distance": null,
+        "Images": null,
+        "Description": "L'h\u00f4tel Caribbean l'une des H\u00f4tels de la ville des Cayes le plus connu, il est occup\u00e9 d'un bar des chambres spacieuses et facile \u00e0 localiser situ\u00e9 dans l'angle de Rue Union.\r\nParmi les attractions \u00e0 proximit\u00e9, il y a Jardin Botanique des Cayes Haiti (4,1 km).\r\n"
+    },
+    {
+        "ID": 63,
+        "Departement_ID": 7,
+        "type": "Hotel",
+        "Nom": "Ch\u00e2teau Champvert",
+        "Adress": "Rue Porteau #8, Les Cayes",
+        "Distance": null,
+        "Images": null,
+        "Description": "Situ\u00e9 \u00e0 proximit\u00e9 de la station baln\u00e9aire de Gel\u00e9e et \u00e0 vingt minutes de la plage de Pointe-Sable Port-Salut, l'h\u00f4tel est b\u00e2ti sur un domaine de 1 hectare et demi."
+    },
+    {
+        "ID": 64,
+        "Departement_ID": 7,
+        "type": "Museum",
+        "Nom": "Villa Mimosa",
+        "Adress": "Formont, Route de Torbeck vers Port-Salut, Les Cayes 8110",
+        "Distance": null,
+        "Images": null,
+        "Description": "La Villa Mimosa est situ\u00e9e \u00e0 Torbeck.  Parmi les sites remarquables de la r\u00e9gion, notons \u00c9glise du Sacr\u00e9-C\u0153ur et Cath\u00e9drale des Cayes."
+    },
+    {
+        "ID": 65,
+        "Departement_ID": 7,
+        "type": "Hotel",
+        "Nom": "La Cayenne H\u00f4tel ",
+        "Adress": "Rue Capitale Presqu'ile des Icaques, Les Cayes 8110 Ha\u00efti",
+        "Distance": null,
+        "Images": null,
+        "Description": "Le cayenne h\u00f4tel fait partie de l'un des plus beaux h\u00f4tels de la ville des Cayes. Il a une tr\u00e8s bonne vue sur la mer et un tr\u00e8s beau piscine. Un restaurant tr\u00e8s attrayant prend soin de votre palet...."
+    },
+    {
+        "ID": 66,
+        "Departement_ID": 7,
+        "type": "Hotel",
+        "Nom": "La Cretonne H\u00f4tel ",
+        "Adress": "Bourjolly, Les Cayes 8110 Ha\u00efti",
+        "Distance": null,
+        "Images": null,
+        "Description": "En remontant la Route National 7 en direction de Camp Perrin, on trouve la Cretonne Hotel qui, en plus de quelques chambres, propose une cuisine cr\u00e9ole de bonne facture dans un cadre verdoyant.\r\nL\u2019h\u00f4tel est une v\u00e9ritable oasis dans cayes.\r\n"
+    },
+    {
+        "ID": 67,
+        "Departement_ID": 7,
+        "type": "Hotel",
+        "Nom": "H\u00f4tel Le Manguier ",
+        "Adress": "Rue Antoine Lucien, Arrondissement des Cayes",
+        "Distance": null,
+        "Images": null,
+        "Description": "Manguier Hotel est un h\u00f4tel. Manguier Hotel est situ\u00e9e \u00e0 proximit\u00e9 de \u00c9glise Evan Baptise et du bureau du gouvernement Minist\u00e8res de L\u2019environnement."
+    },
+    {
+        "ID": 68,
+        "Departement_ID": 7,
+        "type": "Beach",
+        "Nom": "Gel\u00e9e Beach",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Situ\u00e9e pr\u00e8s des Cayes dans le sud d'Ha\u00efti, Gel\u00e9e Beach est l'une des plages les plus populaires d'Ha\u00efti.  Faits saillants, y compris les marchands de fritay en bord de mer et la chance de voir des vaches pa\u00eetre dans des champs qui atteignent presque le bord de l'eau.  Compar\u00e9 \u00e0 d'autres plages populaires d'Ha\u00efti, les environs sont plats et ouverts"
+    },
+    {
+        "ID": 69,
+        "Departement_ID": 7,
+        "type": "Museum",
+        "Nom": "Cayes Botanique Garden",
+        "Adress": "Route Nationale #2, Les Cayes, 8110",
+        "Distance": null,
+        "Images": null,
+        "Description": "Jardin Botanique des Cayes Haiti est une institution de recherche scientifique et de conservation des plantes en Haiti."
+    },
+    {
+        "ID": 70,
+        "Departement_ID": 7,
+        "type": "Beach",
+        "Nom": "Saut-Mathurine",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Saut-Mathurine est une cascade situ\u00e9e \u00e0 Camp-Perrin, Sud. Il s'agit de l'une des plus grandes chutes d'eau en Ha\u00efti. La chute d'eau s'\u00e9tend sur la rivi\u00e8re de Cavaillon dans les hauteurs de Camp-Perrin."
+    },
+    {
+        "ID": 71,
+        "Departement_ID": 8,
+        "type": "Beach",
+        "Nom": "Makay Guest House",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Nous visitons l'\u00e9tablissement \u00e9cologique Makay GuestHouse. Situ\u00e9 entre l'a\u00e9roport r\u00e9cemment r\u00e9nov\u00e9 et le centre-ville, il se trouve dans un espace vert luxuriant surplombant l'une des meilleures plages de Grand'Anse : Anse d'Azur\n\nVenez d\u00e9couvrir pourquoi cet endroit est une raison suffisante pour se rendre \u00e0 J\u00e9r\u00e9mie.\nMaison d'h\u00f4tes Makay"
+    },
+    {
+        "ID": 72,
+        "Departement_ID": 8,
+        "type": "Beach",
+        "Nom": "Anse Azur",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Anse d\u2019Azur est une petite plage situ\u00e9e \u00e0 l\u2019ouest de la ville de J\u00e9r\u00e9mie.\r\nElle rel\u00e8ve de la section communale de Fond-Rouge Torbeck, commune de J\u00e9r\u00e9mie. Pour y arriver, quittant la ville, il faut emprunter la rue de La Source Dommage et continuer vers Nan Lundi.\r\n"
+    },
+    {
+        "ID": 73,
+        "Departement_ID": 8,
+        "type": "Museum",
+        "Nom": "Cath\u00e9drale Saint Louis",
+        "Adress": ": \u00c9glise Saint-Louis, rue Eug\u00e8ne Margron, J\u00e9r\u00e9mie ",
+        "Distance": null,
+        "Images": null,
+        "Description": "La cath\u00e9drale Saint-Louis de Versailles est une \u00e9glise de style rocaille construite par l'architecte Jacques Hardouin-Mansart de Sagonne. Elle fut b\u00e9nie le 25 ao\u00fbt 1754, jour de la saint Louis, et choisie comme cath\u00e9drale \u00e0 la cr\u00e9ation de l'\u00e9v\u00each\u00e9 de Versailles en 1802. Elle ne fut consacr\u00e9e qu'en 1843."
+    },
+    {
+        "ID": 74,
+        "Departement_ID": 8,
+        "type": "Restaurent",
+        "Nom": "Lundy\u2019s bar resto",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": null
+    },
+    {
+        "ID": 75,
+        "Departement_ID": 8,
+        "type": "Hotel",
+        "Nom": "Place Charmant Hotel",
+        "Adress": "Rte de Calasse, J\u00e9r\u00e9mie ",
+        "Distance": null,
+        "Images": null,
+        "Description": "Hotel Place Charmant est situ\u00e9e \u00e0 proximit\u00e9 du h\u00f4pital HHF et du parc Basketball Court."
+    },
+    {
+        "ID": 76,
+        "Departement_ID": 8,
+        "type": "Hotel",
+        "Nom": "Hotel Le Sarah",
+        "Adress": "48, Bordes J\u00e9r\u00e9mie ",
+        "Distance": null,
+        "Images": null,
+        "Description": "Joli h\u00f4tel en plein milieu de la luxuriante v\u00e9g\u00e9tation de Grand'Anse,"
+    },
+    {
+        "ID": 77,
+        "Departement_ID": 8,
+        "type": "Hotel",
+        "Nom": "Hotel le bon temps",
+        "Adress": " 8, rue Emile Roumer Bordes H\u00f4tel ",
+        "Distance": null,
+        "Images": null,
+        "Description": "Grande b\u00e2tisse voisine de l'Auberge Inn g\u00e9r\u00e9e par Lesly Bontemps. "
+    },
+    {
+        "ID": 78,
+        "Departement_ID": 8,
+        "type": "Hotel",
+        "Nom": "Hotel la cabane",
+        "Adress": "9, Avenue Emile-Roumer Bordes H\u00f4tel ",
+        "Distance": null,
+        "Images": null,
+        "Description": " Ancr\u00e9 au milieu de l'exub\u00e9rante v\u00e9g\u00e9tation de la zone r\u00e9sidentielle de Bordes, il domine la mer et la ville."
+    },
+    {
+        "ID": 79,
+        "Departement_ID": 8,
+        "type": "Restaurent",
+        "Nom": "Brothers and Sisters hotel",
+        "Adress": "2 Caracoli,J\u00e9r\u00e9mie, Haiti",
+        "Distance": null,
+        "Images": null,
+        "Description": "15 minutes de cath\u00e9drale saint Louis "
+    },
+    {
+        "ID": 80,
+        "Departement_ID": 8,
+        "type": "Hotel",
+        "Nom": "Auberge'INN Hotel",
+        "Adress": "6, avenue \u00c9mile Roumer, Jeremie, Haiti",
+        "Distance": null,
+        "Images": null,
+        "Description": "Auberge'Inn is The 3rd Top rated Hotel in Jeremie, Auberge'Inn - in Jeremie, Haiti."
+    },
+    {
+        "ID": 81,
+        "Departement_ID": 9,
+        "type": "Hotel",
+        "Nom": "Rendez-vous h\u00f4tel club ",
+        "Adress": "Morne aux p\u00e8res, rue Benito Sylvain, port-de-paix ",
+        "Distance": null,
+        "Images": null,
+        "Description": "Rendez-vous Club de 4 \u00e9toiles est un choix de r\u00e9sidence parfait \u00e0 Port-de-Paix."
+    },
+    {
+        "ID": 82,
+        "Departement_ID": 9,
+        "type": "Beach",
+        "Nom": "Boukan Guinguette ",
+        "Adress": "Plage de raisinier, mole Saint-Nicolas 3310",
+        "Distance": null,
+        "Images": null,
+        "Description": "Boukan Guinguette est un resto-bar / camping / bungalows sur la plus belle plage du M\u00f4le Saint Nicolas. Plongez dans l'histoire, sur le m\u00eame site o\u00f9 Christophe Colomb arriva en Hispaniola, en D\u00e9cembre 1492. Malgr\u00e9 -ou gr\u00e2ce \u00e0- acc\u00e8s difficile par la route, c'est un lieu unique o\u00f9 d\u00e9couvrir la culture ha\u00eftienne et l'histoire de la premi\u00e8re nation noire. Randonn\u00e9es, kitesurf, visites des sites historiques et naturels exceptionnels, promenade en canot, plong\u00e9e au tuba, gastronomie locale et touche fran\u00e7aise, sont une partie des activit\u00e9s auxquelles vous pourrez vous adonner dans notre petit monde du tourisme alternatif \u00e9co-responsable. Le Boukan Guinguette c'est \u00e9galement la premi\u00e8re et unique \u00e9cole de Kitesurf en Ha\u00efti. Venez go\u00fbter le vent et d\u00e9couvrez un spot unique !"
+    },
+    {
+        "ID": 83,
+        "Departement_ID": 9,
+        "type": "Restaurent",
+        "Nom": "Caciquat Convention Center",
+        "Adress": "167 Rue Notre Dame, Port-de-Paix ",
+        "Distance": null,
+        "Images": null,
+        "Description": "Dans un d\u00e9partement o\u00f9 loisir est un luxe, Caciquat Convention Center est une perle rare \u00e0 port de paix, dans le Nord-Ouest d'Ha\u00efti. Cet endroit \u00e9volue de jour en jour surtout lorsqu'il y a des festivit\u00e9s: carnavalesque, patronale, etc."
+    },
+    {
+        "ID": 84,
+        "Departement_ID": 9,
+        "type": "Beach",
+        "Nom": "H\u00f4tel Breeze Marina Star",
+        "Adress": "Route Beaudin 3 km Est Port-de-Paix.",
+        "Distance": null,
+        "Images": null,
+        "Description": "Un \u00e9tablissement de qualit\u00e9, confortable et moderne, construit les pieds dans l'eau.  Le plus luxueux du quartier.  Le week-end et les soirs de vacances, la discoth\u00e8que de l'h\u00f4tel est le cadre id\u00e9al pour la plage.  L'embarcad\u00e8re de la Tortue est \u00e0 proximit\u00e9.  Le restaurant propose \u00e9galement une cuisine ha\u00eftienne, une revue et un style am\u00e9ricain corrig\u00e9."
+    },
+    {
+        "ID": 85,
+        "Departement_ID": 9,
+        "type": "Restaurent",
+        "Nom": "Red point sport bar & restaurant",
+        "Adress": "152, Arrondissement de Port-de-Paix ",
+        "Distance": null,
+        "Images": null,
+        "Description": "Red Point Bar Kas, le bar le plus ancien et le plus anim\u00e9.  Cocktail, Indig\u00e8ne - Boissons \u00e9trang\u00e8res, shots le Jour surprise."
+    },
+    {
+        "ID": 86,
+        "Departement_ID": 9,
+        "type": "Restaurent",
+        "Nom": "JILO-MAX",
+        "Adress": "Saint-Louis Du Nord Haiti",
+        "Distance": null,
+        "Images": null,
+        "Description": "Un restaurant incontournable \u00e0 Saint-Louis Du Nord, commun\u00e9ment appel\u00e9 \u00ab chez Tatie Soise \u00bb."
+    },
+    {
+        "ID": 87,
+        "Departement_ID": 9,
+        "type": "Restaurent",
+        "Nom": "Boulangerie Five Family",
+        "Adress": "152, Saint-Louis Du Nord, Ha\u00efti",
+        "Distance": null,
+        "Images": null,
+        "Description": "Boulangerie qui fait bien le travail pour le petit d\u00e9jeuner ou les petits creux."
+    },
+    {
+        "ID": 88,
+        "Departement_ID": 9,
+        "type": "Beach",
+        "Nom": "Sousa Bay beach & h\u00f4tel ",
+        "Adress": "Bonneau, Saint-Louis Du Nord, Ha\u00efti",
+        "Distance": null,
+        "Images": null,
+        "Description": "Sousa Bay Beach & Hotel est l'un des fournisseurs d'h\u00f4tels de plage les plus chics et de classe mondiale de l'industrie qui offre certains des meilleurs services, chambres et plus encore dans les affaires."
+    },
+    {
+        "ID": 89,
+        "Departement_ID": 9,
+        "type": "Beach",
+        "Nom": "Lorina H\u00f4tel ",
+        "Adress": "Rue Benito Sylvain, Arrondissement de Port-de-Paix ",
+        "Distance": null,
+        "Images": null,
+        "Description": "Hotel de classe moyenne. Tr\u00e8s fr\u00e9quent\u00e9 selon la p\u00e9riode et l'occasion. Bonne cuisine. Espace calme et respectueux.\r\nIls ont une piscine souterraine avec des chambres avec une vue magnifique sur l'eau.  Les cuisiniers sont incroyables.\r\n"
+    },
+    {
+        "ID": 90,
+        "Departement_ID": 9,
+        "type": "Hotel",
+        "Nom": "Columbus H\u00f4tel ",
+        "Adress": "Mole Saint-Nicolas",
+        "Distance": null,
+        "Images": null,
+        "Description": "Endroit vraiment calme et agr\u00e9able.  Merveilleux pour se reposer.  Bonne cuisine cr\u00e9ole.  Personnel pas vraiment form\u00e9 mais poli.  La mer est magnifique.  La vue sur le \"preskil\" est incroyable.  Jamais bond\u00e9, ici vous pouvez toujours trouver de la place."
+    },
+    {
+        "ID": 91,
+        "Departement_ID": 10,
+        "type": "Hotel",
+        "Nom": "Dayenne Auberge",
+        "Adress": "16 rue Joseph, Fonds-des-n\u00e8gres HT, 7413",
+        "Distance": null,
+        "Images": null,
+        "Description": "Dayenne Auberge. Le lieu parfait pour un bon s\u00e9jour, pour se reposer et pour travailler."
+    },
+    {
+        "ID": 92,
+        "Departement_ID": 10,
+        "type": "Beach",
+        "Nom": "Lac de Mirag\u00f4ane",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Le lac de Mirago\u00e2ne ou \u00e9tang de Mirago\u00e2ne est un lac d'eau douce situ\u00e9e au sud-est de la ville de Mirag\u00f4ane."
+    },
+    {
+        "ID": 93,
+        "Departement_ID": 10,
+        "type": "Museum",
+        "Nom": "Eglise Saint Jean Baptiste",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "La co-cath\u00e9drale Saint-Jean-Baptiste est une cath\u00e9drale catholique situ\u00e9e \u00e0 Mirag\u00f4ane, en Ha\u00efti. Elle fut construite en style gothique avec le sable qui lestait les navires venus de Saint Malo (France) pour chercher les produits de la colonie haitienne.\r\nElle est depuis 2008 le si\u00e8ge du dioc\u00e8se de Nippes .\r\n"
+    },
+    {
+        "ID": 94,
+        "Departement_ID": 10,
+        "type": "Hotel",
+        "Nom": "FRANCOVILLE VILLA HOTEL BAR RESTAURANT ",
+        "Adress": "5 tibacadere, Anse \u00e0 Veau",
+        "Distance": null,
+        "Images": null,
+        "Description": "Cet h\u00f4tel se trouve \u00e0 49,5 km de H\u00f4pital Sainte-Th\u00e9r\u00e8se de Mirago\u00e2ne et \u00e0 51,7 km de Ch\u00e2teau de Mirago\u00e2ne."
+    },
+    {
+        "ID": 95,
+        "Departement_ID": 10,
+        "type": "Museum",
+        "Nom": "Saut du Baril",
+        "Adress": "Petite rivi\u00e8re de nippes ",
+        "Distance": null,
+        "Images": null,
+        "Description": "Bois\u00e9es en grande partie de diverses esp\u00e8ces d\u2019arbres, les terres de Saut-du-Baril, 3e section communale d'Anse-\u00e0-Veau, dans le d\u00e9partement des Nippes, offrent un cadre exotique aux visiteurs et aux p\u00e8lerins qui y viennent r\u00e9guli\u00e8rement."
+    },
+    {
+        "ID": 96,
+        "Departement_ID": 10,
+        "type": "Hotel",
+        "Nom": "Chez Den bar restaurant h\u00f4tel ",
+        "Adress": "Carrefour-Desruisseaux Mirag\u00f4ane ",
+        "Distance": null,
+        "Images": null,
+        "Description": "CHEZ DEN-N BAR-RESTAURANT - Mirago\u00e2ne - Carrefour-Desruisseaux Cuisines du monde : Tout pr\u00e8s du point de stationnement des bus \u00e0 destination de Port-au-Prince."
+    },
+    {
+        "ID": 97,
+        "Departement_ID": 10,
+        "type": "Hotel",
+        "Nom": "Sweet Garden",
+        "Adress": null,
+        "Distance": null,
+        "Images": null,
+        "Description": "Parce que c'est un lieu propre et s\u00e9curis\u00e9. On peut y faire bonne d\u00e9tente et profiter de consommer des produits locaux.\r\nIl y a une salle de conf\u00e9rence o\u00f9 on peut faire des r\u00e9unions en m\u00eame temps.\r\n206, Mirag\u00f4ane \r\n"
+    },
+    {
+        "ID": 98,
+        "Departement_ID": 10,
+        "type": "Hotel",
+        "Nom": "Robsi H\u00f4tel ",
+        "Adress": "Robsi Hotel situ\u00e9 \u00e0 23, Fond Jean Simon, Route Nationale #2 Arrondissement de Mirago\u00e2ne.",
+        "Distance": null,
+        "Images": null,
+        "Description": "Robsi Hotel vous fait profiter d'un s\u00e9jour pr\u00e8s de la plage et se trouve \u00e0 seulement 7 min en voiture de Ch\u00e2teau de Mirago\u00e2ne. Cet h\u00f4tel tr\u00e8s pratique pour les familles se trouve \u00e0 3,2 km de H\u00f4pital Sainte-Th\u00e9r\u00e8se de Mirago\u00e2ne et \u00e0 16,8 km de Plage de Cocoyer Beach."
+    }
+]

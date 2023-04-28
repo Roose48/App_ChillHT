@@ -1,6 +1,8 @@
+import 'package:app/pages/display_data.dart';
 import 'package:app/pages/homepage.dart';
 import 'package:app/pages/states.dart';
 import 'package:flutter/material.dart';
+import 'package:app/pages/description.dart';
 
 
 class Places extends StatelessWidget {
@@ -30,17 +32,18 @@ class Places extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            buildButton(context, 'hotel', Icons.hotel, Color.fromARGB(255, 233, 66, 16),
+            
+            buildButton(context, 'Hotel', Icons.hotel, Color.fromARGB(255, 233, 66, 16), 'Hotel'
               ),
             const SizedBox(height:40),
 
-            buildButton(context, 'Restaurant', Icons.restaurant, Color.fromARGB(255, 233, 66, 16),),
+            buildButton(context, 'Restaurant', Icons.restaurant, Color.fromARGB(255, 233, 66, 16), 'Restaurant'),
             const SizedBox(height: 40),
 
-            buildButton(context, 'Museum', Icons.museum, Color.fromARGB(255, 233, 66, 16),),
+            buildButton(context, 'Museum', Icons.museum, const Color.fromARGB(255, 233, 66, 16),'Museum'),
             const SizedBox(height: 40),
 
-            buildButton(context, 'Beach', Icons.beach_access, const Color.fromARGB(255, 233, 66, 16),),
+            buildButton(context, 'Beach', Icons.beach_access, const Color.fromARGB(255, 233, 66, 16),'Beach'),
           ],
         ),
       ),
@@ -49,11 +52,11 @@ class Places extends StatelessWidget {
   }
 
   Widget buildButton(
-      BuildContext context, String text, IconData iconData, Color color) {
+      BuildContext context, String text, IconData iconData, Color color, String type) {
     return GestureDetector(
        onTap: () => Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => States(title: "bb", name: '',)),
+        MaterialPageRoute(builder: (context) => Display_Data(name_dp: name, type: type ,)),
       ),
   
       child: Container(
