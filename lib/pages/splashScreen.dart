@@ -17,42 +17,29 @@ class _SplashState extends State<Splash> {
   
 
   void _navigatehome() async {
-  await Future.delayed(const Duration (milliseconds: 3000), () {});
+  await Future.delayed(const Duration (milliseconds: 5000), () {});
   // ignore: use_build_context_synchronously
   Navigator.pushReplacement(
     context,
      MaterialPageRoute(
-      builder: (context) => Homepage (
-        //title:  'chillHT',
-      )));
+      builder: (context) => Homepage ()));
 
 }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
       body:  Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container( 
-              color: Colors.black,
+            Container(
               child: Image.asset(
             'assets/images/chillHT.png',
-            width: 100,
-            height: 100,
+            width: 200,
+            height: 200,
               )
             ),
-
-       
-
-      Container(
-        child: const Text(
-          'Splash screen' , 
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-        ),
-      ),
          ],
         ),
       ),
