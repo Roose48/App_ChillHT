@@ -61,6 +61,7 @@ class _FirestoreImageDisplayState extends State<FirestoreImageDisplay> {
   }
 }
 
+// ignore: camel_case_types
 class Descrip_Data extends StatefulWidget {
   final data place;
 
@@ -70,10 +71,76 @@ class Descrip_Data extends StatefulWidget {
   }) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _Descrip_DataState createState() => _Descrip_DataState();
 }
 
+
+
+
+
+class firebaseImages extends StatefulWidget{
+  firebaseImages({super.key});
+  @override
+  State<firebaseImages> createState() => _MyWidgetState();
+}
+
+class _MyWidgetState extends State<firebaseImages> {
+  late String imageUrl;
+  final storage = FirebaseStorage.instance;
+
+  @override
+  void initState() {
+    super.initState();
+    imageUrl = '';
+    getImageUrl();
+  }
+   Future<void> getImageUrl() async {
+    final ref = storage.ref().child('Anse Azur.png');
+    final url = await ref.getDownloadURL();
+    setState(() {
+      imageUrl = url;
+    });
+  }
+  
+  @override
+  Widget build(BuildContext context) {
+  return Scaffold(
+      appBar: AppBar(
+      ),
+      body: Column(
+        children: [
+          SizedBox(
+              height: 300,
+              child: Image(
+                image: NetworkImage(imageUrl),
+                fit: BoxFit.cover,
+              )),
+          
+        ],
+      ),
+    );
+  }
+  }
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+// ignore: camel_case_types
 class _Descrip_DataState extends State<Descrip_Data> {
+
+
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -100,4 +167,5 @@ class _Descrip_DataState extends State<Descrip_Data> {
       ),
     );
   }
+  
 }
