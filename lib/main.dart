@@ -14,7 +14,7 @@ Future<void> main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // Root of your application.
+  // Root of the application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Splash(title: 'bb'),
+      home: Splash(),
       debugShowCheckedModeBanner: false,
     );
   }

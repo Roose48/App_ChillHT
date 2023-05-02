@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:app/pages/homepage.dart';
 
 class Splash extends StatefulWidget {
-  const Splash({super.key, required String title});
+  const Splash({super.key});
 
   @override
   State<Splash> createState() => _SplashState();
