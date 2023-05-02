@@ -126,16 +126,6 @@ class _MyWidgetState extends State<firebaseImages> {
  
 
 
-
-
-
-
-
-
-
-
-
-
 // ignore: camel_case_types
 class _Descrip_DataState extends State<Descrip_Data> {
 
