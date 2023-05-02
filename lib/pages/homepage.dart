@@ -4,6 +4,39 @@ import 'package:app/pages/states.dart';
 import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
+
+Widget button(String text){
+  return Container(
+    height: 50.0,
+    width: 220.0,
+    margin: const EdgeInsets.symmetric(horizontal: 10),
+    alignment: Alignment.center,
+    decoration: BoxDecoration(
+      color: Color.fromARGB(255, 197, 67, 28),
+      borderRadius: BorderRadius.circular(25.0),
+      boxShadow: const [
+        BoxShadow(
+          color: Colors.black,
+          blurRadius: 4.0,
+          spreadRadius: 1.0, 
+          offset: Offset(
+            0.0,
+            4.0,
+          ),
+        ),
+      ]
+      ),
+    child: Text(
+      text,
+      style: const TextStyle(
+        fontSize: 18.0,
+        fontWeight: FontWeight.bold,
+        color: Colors.white,
+      ),
+    ),
+  );
+}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +53,9 @@ class Homepage extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
+
             SizedBox(height: 20),
+
             GestureDetector(
               onTap: () {
                 Navigator.push(
@@ -28,61 +63,21 @@ class Homepage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => States( title: 'bae', name: 'AllDepartement')),
                 );
               },
-              child: Container(
-                height: 50.0,
-                width: 220.0,
-                margin: const EdgeInsets.symmetric(horizontal: 10),
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 197, 67, 28),
-                  borderRadius: BorderRadius.circular(25.0),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.black,
-                      blurRadius: 4.0,
-                      spreadRadius: 1.0, 
-                      offset: Offset(
-                        0.0,
-                        4.0,
-                      ),
-                    ),
-                  ]
-                  ),
-                child: const Text(
-                  "Discover",
-                  style: TextStyle(
-                    fontSize: 10.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
-              ),
+              child: button("Discover")
             ),
 
             const SizedBox(height: 20),
             
-            ElevatedButton(
-              onPressed: () {
+            GestureDetector(
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) =>  Register(title: 'AllDepartement',)),
+                  MaterialPageRoute(builder: (context) => Register(title: 'b')),
                 );
               },
-              style: ElevatedButton.styleFrom(
-                minimumSize: Size(250, 50),
-                textStyle: TextStyle(fontSize: 20),
-                primary: Colors.white,
-                onPrimary: Colors.black,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  side: const BorderSide(
-                    color: Colors.deepOrange,
-                    width: 2,
-                  ),
-                ),
-              ),
-              child: Text('Get Infos'),
+              child: button("Register a new place")
             ),
+            const SizedBox(height: 25),
           ],
         ),
       ),
