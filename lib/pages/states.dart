@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:app/pages/places.dart';
 
 class States extends StatefulWidget {
-  const States({super.key, required this.title, required String name});
+  const States({super.key});
 
-  final String title;
 
   @override
   State<States> createState() => _StatesState();

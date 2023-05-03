@@ -58,7 +58,7 @@ class Login extends StatelessWidget {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Register(title: 'register',)));
+                                    builder: (context) => Register()));
                           },
                           child: Container(
                             height: 50.0,

@@ -12,13 +12,13 @@ Widget button(String text){
     margin: const EdgeInsets.symmetric(horizontal: 10),
     alignment: Alignment.center,
     decoration: BoxDecoration(
-      color: Color.fromARGB(255, 197, 67, 28),
+      color: Color.fromARGB(255, 239, 114, 37),
       borderRadius: BorderRadius.circular(25.0),
       boxShadow: const [
         BoxShadow(
           color: Colors.black,
-          blurRadius: 4.0,
-          spreadRadius: 1.0, 
+          blurRadius: 5.0,
+          spreadRadius: 2.0, 
           offset: Offset(
             0.0,
             4.0,
@@ -70,7 +70,8 @@ Widget button(String text){
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => States( title: 'bae', name: 'AllDepartement')),
+                  MaterialPageRoute(
+                    builder: (context) => States()),
                 );
               },
               child: button("Discover")
@@ -82,7 +83,7 @@ Widget button(String text){
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Register(title: 'b')),
+                  MaterialPageRoute(builder: (context) => Register()),
                 );
               },
               child: button("Register a new place")
