@@ -41,11 +41,23 @@ Widget button(String text){
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/haiti.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset(
+              'assets/images/chillHT.png',
+              width: 200,
+              height: 200,
+            ),
+            const SizedBox(height: 40),
             const Text(
-              "You want to chill? Discover beautiful places in Haiti with us!",
+              "You want to chill? Come discover beautiful places in Haiti with us!",
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -53,9 +65,7 @@ Widget button(String text){
               ),
               textAlign: TextAlign.center,
             ),
-
-            SizedBox(height: 20),
-
+            const SizedBox(height: 120),
             GestureDetector(
               onTap: () {
                 Navigator.push(
@@ -66,7 +76,7 @@ Widget button(String text){
               child: button("Discover")
             ),
 
-            const SizedBox(height: 20),
+            const SizedBox(height: 30),
             
             GestureDetector(
               onTap: () {

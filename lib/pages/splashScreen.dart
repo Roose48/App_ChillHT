@@ -35,7 +35,7 @@ class _SplashState extends State<Splash> {
           children: [
             Container(
               child: Image.asset(
-            'assets/images/chillHT.png',
+            'assets/images/chillHT_logo.png',
             width: 200,
             height: 200,
               )
