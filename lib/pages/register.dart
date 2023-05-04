@@ -73,6 +73,7 @@ class _RegisterState extends State<Register> {
               Expanded(
                 flex: 2,
                 child: Container(
+                  padding: const EdgeInsets.fromLTRB(15.0, 15.0, 15.0, 0),
                   decoration: const BoxDecoration(
                     color: Color.fromARGB(197, 255, 255, 255),
                     borderRadius: BorderRadius.only(
@@ -82,95 +83,197 @@ class _RegisterState extends State<Register> {
                   ),
                   child: ListView(
                     children: [
-                      const SizedBox(
-                      height: 20.0,
-                      ),
                       TextField(
-                      controller: emailController,
-                      decoration: const InputDecoration(                  
-                        labelText: 'Email',
+                        controller: emailController,
+                        decoration: const InputDecoration(                  
+                          hintText: 'Email',
+                          hintStyle: TextStyle(
+                            color: Colors.black45,
+                          ),
+                          filled: true,
+                          fillColor: Colors.white,
+                          icon: Icon(
+                            Icons.mail,
+                            color: Colors.deepOrange,
+                          ),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(20.0),
+                            ),
+                            borderSide: BorderSide.none,
+                          ),
+                        ),
+                        onChanged: (value) => email = value,
                       ),
-                      onChanged: (value) => email = value,
-                    ),
-                    const SizedBox(height: 10.0),
-                    TextField(
-                      controller: businessNameController,
-                      decoration: const InputDecoration(
-                        labelText: 'Business Name',
+                      const SizedBox(height: 20.0),
+                      TextField(
+                        controller: businessNameController,
+                        decoration: const InputDecoration(
+                          hintText: 'Business Name',
+                          hintStyle: TextStyle(
+                            color: Colors.black45,
+                          ),
+                          filled: true,
+                          fillColor: Colors.white,
+                          icon: Icon(
+                            Icons.business,
+                            color: Colors.deepOrange,
+                          ),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(20.0),
+                            ),
+                            borderSide: BorderSide.none,
+                          ),
+                        ),
+                        onChanged: (value) => name = value,
                       ),
-                      onChanged: (value) => name = value,
-                    ),
-                    const SizedBox(height: 10.0),
-                    TextField(
-                      controller: cityController,
-                      decoration: const InputDecoration(
-                        labelText: 'City',
+                      const SizedBox(height: 20.0),
+                      TextField(
+                        controller: cityController,
+                        decoration: const InputDecoration(
+                          hintText: 'City',
+                          hintStyle: TextStyle(
+                            color: Colors.black45,
+                          ),
+                          filled: true,
+                          fillColor: Colors.white,
+                          icon: Icon(
+                            Icons.location_city,
+                            color: Colors.deepOrange,
+                          ),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(20.0),
+                            ),
+                            borderSide: BorderSide.none,
+                          ),
+                        ),
+                        onChanged: (value) => city = value,
                       ),
-                      onChanged: (value) => city = value,
-                    ),
-                    const SizedBox(height: 16.0),
-                    TextField(
-                      controller: addressController,
-                      decoration: const InputDecoration(
-                        labelText: 'Address',
+                      const SizedBox(height: 20.0),
+                      TextField(
+                        controller: addressController,
+                        decoration: const InputDecoration(
+                          hintText: 'Address',
+                          hintStyle: TextStyle(
+                            color: Colors.black45,
+                          ),
+                          filled: true,
+                          fillColor: Colors.white,
+                          icon: Icon(
+                            Icons.location_on,
+                            color: Colors.deepOrange,
+                          ),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(20.0),
+                            ),
+                            borderSide: BorderSide.none,
+                          ),
+                        ),
+                        onChanged: (value) => address = value,
                       ),
-                      onChanged: (value) => address = value,
-                    ),
-
-
-
-                    const SizedBox(height: 16.0),
-                    TextField(
-                      controller: departmentController,
-                      decoration: const InputDecoration(
-                        labelText: 'Department',
+                      const SizedBox(height: 20.0),
+                      TextField(
+                        controller: departmentController,
+                        decoration: const InputDecoration(
+                          hintText: 'Department',
+                          hintStyle: TextStyle(
+                            color: Colors.black45,
+                          ),
+                          filled: true,
+                          fillColor: Colors.white,
+                          icon: Icon(
+                            Icons.add_location_alt_sharp,
+                            color: Colors.deepOrange,
+                          ),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(20.0),
+                            ),
+                            borderSide: BorderSide.none,
+                          ),
+                        ),
+                        onChanged: (value) => state = value,
                       ),
-                      onChanged: (value) => state = value,
-                    ),
-
-          
-                    const Spacer(), 
-                    ElevatedButton(
-                      onPressed: () async {
-                        FilePickerResult? result =
+                      const SizedBox(height: 20.0),
+                      GestureDetector(
+                          onTap: () async{
+                            FilePickerResult? result =
                             await FilePicker.platform.pickFiles(type: FileType.image);
 
-                        if (result != null) {
-                          File file = File(result.files.single.path!);
-                          // Do something with the selected image file
-                        }
-                      },
-                      child: Text('Upload Image'),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Color.fromARGB(255, 233, 66, 16),
-                      shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                            if (result != null) {
+                              File file = File(result.files.single.path!);
+                              // Do something with the selected image file
+                            }
+                          },
+                          child: Container(
+                            height: 50.0,
+                            // width: 300.0,
+                            margin: const EdgeInsets.symmetric(horizontal: 50),
+                            alignment: Alignment.center,
+                            decoration: BoxDecoration(
+                                color: const Color.fromARGB(255, 239, 114, 37),
+                                borderRadius: BorderRadius.circular(25.0),
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: const [
+                                Icon(
+                                  Icons.upload,
+                                  color: Colors.white,
+                                ),
+                                Text(
+                                'Upload Image',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 20.0,
+                                ),
+                              ),
+                            ],
+                            ),
+                          ),
+                      ),
+                      const SizedBox(height: 20.0),
+                      GestureDetector(
+                        onTap: () {
+                          // Implement firebase registration connection here
+                          _firestore.collection('places').add({
+                            'email': email,
+                            'place_name': name,
+                            'state': state,
+                            'city': city,
+                            'addresse': address,
+                          });
+                        },
+                        child: Container(
+                          height: 50.0,
+                          margin: const EdgeInsets.symmetric(horizontal: 50),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                              color: const Color.fromARGB(255, 239, 114, 37),
+                              borderRadius: BorderRadius.circular(25.0),
+                              boxShadow: const [
+                                BoxShadow(
+                                  color: Colors.black87,
+                                  blurRadius: 4.0,
+                                  spreadRadius: 2.0,
+                                ),
+                              ]
+                              ),
+                          child: const Text(
+                            'Register',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20.0,
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                    Spacer(), // Ajout d'un Spacer pour pousser le bouton vers le bas
-                    ElevatedButton(
-                      onPressed: () {
-                        // Implement firebase registration connection here
-                        _firestore.collection('places').add({
-                          'email': email,
-                          'place_name': name,
-                          'state': state,
-                          'city': city,
-                          'addresse': address,
-                        });
-                      },
-                      child: Text('Register'),
-                      style: ElevatedButton.styleFrom(
-                        
-                      shape: CircleBorder(), // Utilisation de CircleBorder pour faire le bouton en forme de cercle
-                      padding: EdgeInsets.all(0), // Suppression de l'espacement interne pour que le cercle occupe toute la place disponible
-                      minimumSize: Size(60, 80), // Définition de la largeur et de la hauteur pour qu'elles soient égales
-                      backgroundColor: Color.fromARGB(255, 233, 66, 16),
-      // Couleur de fond du cercle
-                      elevation: 3, 
-                      ),
-                    ),
+                      const SizedBox(height: 20.0),
                     ],
                   ),
                 ),
@@ -182,101 +285,3 @@ class _RegisterState extends State<Register> {
     );
   }
 }
-
-// Padding(
-//           padding: const EdgeInsets.all(10.0),
-//           child: Column(
-//             crossAxisAlignment: CrossAxisAlignment.stretch,
-//             children: [
-//               TextField(
-//                 controller: emailController,
-//                 decoration: const InputDecoration(                  
-//                   labelText: 'Email',
-//                 ),
-//                 onChanged: (value) => email = value,
-//               ),
-//               const SizedBox(height: 10.0),
-//               TextField(
-//                 controller: businessNameController,
-//                 decoration: const InputDecoration(
-//                   labelText: 'Business Name',
-//                 ),
-//                 onChanged: (value) => name = value,
-//               ),
-//               const SizedBox(height: 10.0),
-//               TextField(
-//                 controller: cityController,
-//                 decoration: const InputDecoration(
-//                   labelText: 'City',
-//                 ),
-//                 onChanged: (value) => city = value,
-//               ),
-//               const SizedBox(height: 16.0),
-//               TextField(
-//                 controller: addressController,
-//                 decoration: const InputDecoration(
-//                   labelText: 'Address',
-//                 ),
-//                 onChanged: (value) => address = value,
-//               ),
-
-
-
-//               const SizedBox(height: 16.0),
-//               TextField(
-//                 controller: departmentController,
-//                 decoration: const InputDecoration(
-//                   labelText: 'Department',
-//                 ),
-//                 onChanged: (value) => state = value,
-//               ),
-
-    
-//               const Spacer(), 
-//               ElevatedButton(
-//                 onPressed: () async {
-//                   FilePickerResult? result =
-//                       await FilePicker.platform.pickFiles(type: FileType.image);
-
-//                   if (result != null) {
-//                     File file = File(result.files.single.path!);
-//                     // Do something with the selected image file
-//                   }
-//                 },
-//                 child: Text('Upload Image'),
-//                 style: ElevatedButton.styleFrom(
-//                   backgroundColor: Color.fromARGB(255, 233, 66, 16),
-//                  shape: RoundedRectangleBorder(
-//                  borderRadius: BorderRadius.circular(10),
-//     ),
-//   ),
-//               ),
-
-
-
-//               Spacer(), // Ajout d'un Spacer pour pousser le bouton vers le bas
-//               ElevatedButton(
-//                 onPressed: () {
-//                   // Implement firebase registration connection here
-//                   _firestore.collection('places').add({
-//                     'email': email,
-//                     'place_name': name,
-//                     'state': state,
-//                     'city': city,
-//                     'addresse': address,
-//                   });
-//                 },
-//                 child: Text('Register'),
-//                 style: ElevatedButton.styleFrom(
-                  
-//                  shape: CircleBorder(), // Utilisation de CircleBorder pour faire le bouton en forme de cercle
-//                  padding: EdgeInsets.all(0), // Suppression de l'espacement interne pour que le cercle occupe toute la place disponible
-//                  minimumSize: Size(60, 80), // Définition de la largeur et de la hauteur pour qu'elles soient égales
-//                  backgroundColor: Color.fromARGB(255, 233, 66, 16),
-//  // Couleur de fond du cercle
-//                  elevation: 3, 
-//                 ),
-//               ),
-//             ],
-//           ),
-//         ),
