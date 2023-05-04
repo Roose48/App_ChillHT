@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:app/pages/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -49,7 +50,20 @@ class _RegisterState extends State<Register> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const SizedBox(
-                      height: 20.0,
+                      height: 5.0,
+                    ),
+                    IconButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Homepage()),
+                        );
+                      }, 
+                      icon: const Icon(
+                        Icons.arrow_back_ios_new,
+                        size: 30.0,
+                        color: Colors.white,
+                      ),
                     ),
                     Image.asset(
                       'assets/images/chillHT_logo.png',
@@ -57,7 +71,7 @@ class _RegisterState extends State<Register> {
                       width: 80,
                     ),
                     const SizedBox(
-                      height: 20.0,
+                      height: 10.0,
                     ),
                     const Text(
                       'Have a great experience\nwith us',
