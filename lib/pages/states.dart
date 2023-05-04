@@ -94,7 +94,7 @@ class _StatesState extends State<States> {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/images/bassin_bleu.jpg"),
+            image: AssetImage("assets/images/cover.jpg"),
             fit: BoxFit.cover,
           ),
         ),
