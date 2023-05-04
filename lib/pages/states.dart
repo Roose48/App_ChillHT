@@ -37,30 +37,46 @@ class _StatesState extends State<States> {
       ),
 
       child: SizedBox(
-        height: 100,
-        width: 200,
-        child: Card(
-          elevation: 15,
-          child: ClipRRect(
-            child: Column(
-              children: [
-                Image.asset('assets/images/bassin_bleu.jpg',
-                fit: BoxFit.cover,
+        width: 250,
+        child: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage(
+                "assets/images/bassin_bleu.jpg"
                 ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Text(
-                  dept,
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black
-                  ),
-                ),
-            ],
+              fit: BoxFit.cover,
+            ),
+            borderRadius: BorderRadius.all(
+              Radius.circular(10.0),
             ),
           ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Container(
+                  height: 70,
+                  alignment: Alignment.bottomCenter,
+                  decoration: const BoxDecoration(
+                    color: Colors.white70,
+                    borderRadius: BorderRadius.horizontal(
+                      left: Radius.circular(10.0),
+                      right: Radius.circular(10.0),
+                       
+                    )
+                  ),
+                  child: Center(
+                    child: Text(
+                      dept,
+                      style: const TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black
+                      ),
+                    ),
+                  )
+              ),
+            ],
+            ),
         ),
       ),
     );
@@ -148,20 +164,15 @@ class _StatesState extends State<States> {
 
             Expanded(
               child: Center(
-                // child: Container(
-                //   height: 300,
-                //   color: Colors.white,
-                //   alignment: Alignment.bottomCenter,
                   child: ScrollSnapList(
                     itemBuilder: _buildDeptCard, 
                     itemCount: deptList.length, 
-                    itemSize: 200, 
+                    itemSize: 250, 
                     onItemFocus: (index) {},
                     dynamicItemSize: true,
                     focusOnItemTap: true,
                     allowAnotherDirection: true,
                   ),
-                // ),
               ),
             ),
           ]
