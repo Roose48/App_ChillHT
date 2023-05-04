@@ -1,3 +1,4 @@
+import 'package:app/components/departements.dart';
 import 'package:flutter/material.dart';
 import 'package:app/pages/places.dart';
 import 'package:scroll_snap_list/scroll_snap_list.dart';
@@ -12,37 +13,39 @@ class States extends StatefulWidget {
 
 class _StatesState extends State<States> {
 
-  List<String> deptList = [
-    "Artibonite",
-    "Centre",
-    "Grand'Anse",
-    "Nippes",
-    "Nord",
-    "Nord-Est",
-    "Nord-Ouest",
-    "Ouest",
-    "Sud",
-    "Sud-Est"
+  List<Departement> deptList = [
+    Departement("Nord", "assets/images/Nord.jpg"),
+    Departement("Nord-Est", "assets/images/NordEst.jpeg"),
+    Departement("Nord-Ouest", "assets/images/NordOuest.jpg"),
+    Departement("Artibonite", "assets/images/Artibonite.png"),
+    Departement("Centre", "assets/images/Centre.jpg"),
+    Departement("Ouest", "assets/images/Ouest.jpg"),
+    Departement("Sud-Est", "assets/images/bassin_bleu.jpg"),
+    Departement("Sud", "assets/images/sud.jpg"),
+    Departement("Nippes", "assets/images/nippes.jpg"),
+    Departement("Grand'Anse", "assets/images/GrandeAnse.jpg"),
+
   ];
 
+
   Widget _buildDeptCard(BuildContext context, int index){
-    String dept = deptList[index];
+    Departement dept = deptList[index];
 
     return  GestureDetector(
     onTap: ()  => Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) =>  Places(name: dept),
+          builder: (context) =>  Places(name: dept.name),
         ),
       ),
 
       child: SizedBox(
         width: 250,
         child: Container(
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage(
-                "assets/images/bassin_bleu.jpg"
+                dept.imagePath
                 ),
               fit: BoxFit.cover,
             ),
@@ -66,7 +69,7 @@ class _StatesState extends State<States> {
                   ),
                   child: Center(
                     child: Text(
-                      dept,
+                      dept.name,
                       style: const TextStyle(
                         fontSize: 30,
                         fontWeight: FontWeight.w500,
@@ -160,7 +163,7 @@ class _StatesState extends State<States> {
               ),
             ),
 
-            SizedBox(height: 20),
+            const SizedBox(height: 50),
 
             Expanded(
               child: Center(
