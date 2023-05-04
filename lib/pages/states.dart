@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:app/pages/places.dart';
 
+import 'homepage.dart';
+
 class States extends StatefulWidget {
   const States({super.key});
 
@@ -18,28 +20,26 @@ class _StatesState extends State<States> {
         MaterialPageRoute(
           builder: (context) =>  Places(name: name),
         ),
-        
       ),
-    
      child: Container(
-            height: 70.0,
-            width: 10.0,
-            margin: EdgeInsets.fromLTRB(30.0, 0.0, 30.0, 20),
-            decoration: BoxDecoration(
-              color: Color.fromARGB(255, 233, 66, 16),
-              borderRadius: BorderRadius.circular(20.0),
+        height: 70.0,
+        width: 10.0,
+        margin: EdgeInsets.fromLTRB(30.0, 0.0, 30.0, 20),
+        decoration: BoxDecoration(
+          color: Color.fromARGB(255, 233, 66, 16),
+          borderRadius: BorderRadius.circular(20.0),
+        ),
+        child: Center(
+          child: Text(
+            name,
+            style: const TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black
             ),
-            child: Center(
-              child: Text(
-                name,
-                style: const TextStyle(
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black
-                ),
-              ),
           ),
-          ),
+      ),
+      ),
     );
     
   }
@@ -49,38 +49,79 @@ class _StatesState extends State<States> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-      child: Container(
-        color: Colors.black,
-        child: Column(
-          children: [
-      const SizedBox(height: 20),
-            Center(
-              child: Image.asset(
-            'assets/images/chillHT.png',
-            width: 100,
-            height: 100,
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/bassin_bleu.jpg"),
+            fit: BoxFit.cover,
           ),
         ),
-
-      SizedBox(height: 5),
-      
-      Container(
-                color: Colors.black,
-                padding: EdgeInsets.all(20),
-                margin: EdgeInsets.all(20),
-                child: TextField(
-                  decoration: InputDecoration(
-                    hintText: 'search',
-                    filled: true,
-                    fillColor: Colors.white,
-                    prefixIcon: Icon(Icons.search, color: Colors.black),
-                    border: OutlineInputBorder(
-                      borderRadius:BorderRadius.circular(20),
-                      borderSide: BorderSide.none)
+      child: SafeArea(
+        child: Column(
+          children: [
+            Container(
+              alignment: Alignment.topLeft,
+              padding: const EdgeInsets.fromLTRB(15.0, 0, 0, 15.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(
+                    height: 5.0,
                   ),
-                ),
+                  IconButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Homepage()),
+                      );
+                    }, 
+                    icon: const Icon(
+                      Icons.arrow_back_ios_new,
+                      size: 30.0,
+                      color: Colors.white,
+                    ),
+                  ),
+                  Image.asset(
+                    'assets/images/chillHT_logo.png',
+                    height: 80,
+                    width: 80,
+                  ),
+                  const SizedBox(
+                    height: 10.0,
+                  ),
+                  const Text(
+                    'Discover',
+                    style: TextStyle(
+                      fontSize: 50.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                  
+                  ShaderMask(
+                    shaderCallback: (bounds) => const LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      tileMode: TileMode.mirror,
+                      colors: [
+                        Color.fromARGB(255, 0, 81, 232), 
+                        Color.fromARGB(255, 222, 0, 0)
+                      ],
+                    ).createShader(bounds),
+                    child: const Text(
+                      'Haiti',
+                      style: TextStyle(
+                        fontSize: 50.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white
+                      ),
+                    ),
+                  ),
+                ],
               ),
+            ),
+
+          SizedBox(height: 5),
             
             Expanded(
                 flex: 3,

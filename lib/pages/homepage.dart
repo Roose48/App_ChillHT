@@ -71,7 +71,7 @@ Widget button(String text){
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => States()),
+                    builder: (context) => const States()),
                 );
               },
               child: button("Discover")
@@ -83,7 +83,7 @@ Widget button(String text){
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Register()),
+                  MaterialPageRoute(builder: (context) => const Register()),
                 );
               },
               child: button("Register a new place")
