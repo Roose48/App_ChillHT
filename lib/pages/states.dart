@@ -1,44 +1,67 @@
 import 'package:flutter/material.dart';
 import 'package:app/pages/places.dart';
+import 'package:scroll_snap_list/scroll_snap_list.dart';
 
 import 'homepage.dart';
 
 class States extends StatefulWidget {
   const States({super.key});
-
-
   @override
   State<States> createState() => _StatesState();
 }
 
 class _StatesState extends State<States> {
 
-  Widget deptCard(String name){
+  List<String> deptList = [
+    "Artibonite",
+    "Centre",
+    "Grand'Anse",
+    "Nippes",
+    "Nord",
+    "Nord-Est",
+    "Nord-Ouest",
+    "Ouest",
+    "Sud",
+    "Sud-Est"
+  ];
+
+  Widget _buildDeptCard(BuildContext context, int index){
+    String dept = deptList[index];
+
     return  GestureDetector(
     onTap: ()  => Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) =>  Places(name: name),
+          builder: (context) =>  Places(name: dept),
         ),
       ),
-     child: Container(
-        height: 70.0,
-        width: 10.0,
-        margin: EdgeInsets.fromLTRB(30.0, 0.0, 30.0, 20),
-        decoration: BoxDecoration(
-          color: Color.fromARGB(255, 233, 66, 16),
-          borderRadius: BorderRadius.circular(20.0),
-        ),
-        child: Center(
-          child: Text(
-            name,
-            style: const TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.bold,
-              color: Colors.black
+
+      child: SizedBox(
+        height: 100,
+        width: 200,
+        child: Card(
+          elevation: 15,
+          child: ClipRRect(
+            child: Column(
+              children: [
+                Image.asset('assets/images/bassin_bleu.jpg',
+                fit: BoxFit.cover,
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  dept,
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.black
+                  ),
+                ),
+            ],
             ),
           ),
-      ),
+        ),
       ),
     );
     
@@ -121,107 +144,30 @@ class _StatesState extends State<States> {
               ),
             ),
 
-          SizedBox(height: 5),
-            
-            Expanded(
-                flex: 3,
-                child: Container(
-                    decoration: const BoxDecoration(
-                    color: Color.fromARGB(174, 255, 255, 255),
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(40.0),
-                      topRight: Radius.circular(40.0),
-                    ),
-                  ),
-                    child: ListView(
-                      children: [
-                        deptCard("Ouest"),
-                        deptCard("Sud-Est"),
-                        deptCard("Nord"),
-                        deptCard("Nord-Est"),
-                        deptCard("Artibonite"),
-                        deptCard("Centre"),
-                        deptCard("Sud"),
-                        deptCard("GrandAnse"),
-                        deptCard("Nord-Ouest"),
-                        deptCard("Nippes"),
+            SizedBox(height: 20),
 
-                      ],
-                      ),
-                    ),
+            Expanded(
+              child: Center(
+                // child: Container(
+                //   height: 300,
+                //   color: Colors.white,
+                //   alignment: Alignment.bottomCenter,
+                  child: ScrollSnapList(
+                    itemBuilder: _buildDeptCard, 
+                    itemCount: deptList.length, 
+                    itemSize: 200, 
+                    onItemFocus: (index) {},
+                    dynamicItemSize: true,
+                    focusOnItemTap: true,
+                    allowAnotherDirection: true,
+                  ),
+                // ),
               ),
+            ),
           ]
           ),
       ),
     ),
-    );
-  }
-}
-
-// child: ListView(
-//           children: [
-//             const SizedBox(
-//               height: 20,
-//               width: 20,
-//             ),
-//             const TextField(
-//               decoration: InputDecoration(
-//                   labelText: 'Search', suffixIcon: Icon(Icons.search)),
-//             ),
-//             const SizedBox(
-//               height: 20,
-//             ),
-//             Expanded(
-//               child: ListView.builder(
-//                 itemCount: allDepartment.length,
-//                 itemBuilder: (context, index) => GestureDetector(
-//                   onTap: () {
-//                     Navigator.push(
-//                       context,
-//                       MaterialPageRoute(
-//                         builder: (context) => DepartmentPage(
-//                           department: allDepartment[index],
-//                         ),
-//                       ),
-//                     );
-//                   },
-//                   child: Card(
-//                     key: ValueKey(allDepartment[index]["id"]),
-//                     color: Colors.blue,
-//                     elevation: 4,
-//                     margin: const EdgeInsets.symmetric(vertical: 10),
-//                     child: ListTile(
-//                       leading: Text(
-//                         allDepartment[index]["id"].toString(),
-//                         style: const TextStyle(
-//                             fontSize: 24, color: Colors.white),
-//                       ),
-//                       title: Text(allDepartment[index]["name"]),
-//                     ),
-//                   ),
-//                 ),
-//               ),
-//             ),
-//           ],
-//         ),
-
-class DepartmentPage extends StatelessWidget {
-  final Map<String, dynamic> department;
-
-  const DepartmentPage({required this.department});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-    //  appBar: AppBar(
-    //     title: Text(department["name"]),
-    //  ),
-    //   body: Center(
-    //     child: Text(
-    //      "This is the ${department["name"]} department page",
-    //      style: const TextStyle(fontSize: 24),
-    //     ),
-    //   ),
     );
   }
 }
