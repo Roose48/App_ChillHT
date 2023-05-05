@@ -1,6 +1,4 @@
 import 'dart:convert';
-import 'dart:ffi';
-import 'dart:math';
 
 import 'package:app/pages/data.dart';
 import 'package:flutter/material.dart';
@@ -9,16 +7,17 @@ import 'package:app/pages/display_data.dart';
 import 'description.dart';
 
 class Display_Data extends StatefulWidget {
-  final String name_dp;
+  final String deptName;
   final String type;
 
-  const Display_Data({super.key, required this.name_dp, required this.type});
+  const Display_Data({super.key, required this.deptName, required this.type});
 
   @override
   _Display_DataState createState() => _Display_DataState();
 }
 
 class _Display_DataState extends State<Display_Data> {
+  
   Future<List<data>> getData() async {
     String jsonData = await DefaultAssetBundle.of(context)
         .loadString("assets/data/data.json");
@@ -41,28 +40,28 @@ class _Display_DataState extends State<Display_Data> {
         future: getData(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            //debugPrint(widget.name_dp);
+            //debugPrint(widget.deptName);
             //debugPrint(widget.type);
 
-            if (widget.name_dp == 'Ouest') {
+            if (widget.deptName == 'Ouest') {
               id = 1;
-            } else if (widget.name_dp == 'Sud-Est') {
+            } else if (widget.deptName == 'Sud-Est') {
               id = 2;
-            } else if (widget.name_dp == 'Nord') {
+            } else if (widget.deptName == 'Nord') {
               id = 3;
-            } else if (widget.name_dp == 'Nord-Est') {
+            } else if (widget.deptName == 'Nord-Est') {
               id = 4;
-            } else if (widget.name_dp == 'Artibonite') {
+            } else if (widget.deptName == 'Artibonite') {
               id = 5;
-            } else if (widget.name_dp == 'Centre') {
+            } else if (widget.deptName == 'Centre') {
               id = 6;
-            } else if (widget.name_dp == 'Sud') {
+            } else if (widget.deptName == 'Sud') {
               id = 7;
-            } else if (widget.name_dp == 'GrandAnse') {
+            } else if (widget.deptName == 'GrandAnse') {
               id = 8;
-            } else if (widget.name_dp == 'Nord-Ouest') {
+            } else if (widget.deptName == 'Nord-Ouest') {
               id = 9;
-            } else if (widget.name_dp == 'Nippes') {
+            } else if (widget.deptName == 'Nippes') {
               id = 10;
             } else {
               id = -1;

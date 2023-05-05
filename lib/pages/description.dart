@@ -1,7 +1,6 @@
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:app/pages/data.dart';
-import 'package:app/pages/display_data.dart';
 
 class FirestoreImageDisplay extends StatefulWidget {
   final data place;

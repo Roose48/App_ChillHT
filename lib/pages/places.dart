@@ -1,100 +1,186 @@
 import 'package:app/pages/display_data.dart';
-import 'package:app/pages/homepage.dart';
 import 'package:app/pages/states.dart';
 import 'package:flutter/material.dart';
-import 'package:app/pages/description.dart';
 
 
 class Places extends StatelessWidget {
   final String name;
+  final String imagePath;
 
-  const Places({super.key, required this.name});
+  const Places({super.key, required this.name, required this.imagePath});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: Colors.black,
-        
-        title: Text(
-          name,
-          
-          style: Theme.of(context).textTheme.titleLarge?.copyWith(
-            color: Colors.white ),
-        
-        ),
-      ),
-      
       body: Container(
-        color: Colors.black,
-        child:Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            
-            buildButton(context, 'Hotel', Icons.hotel, Color.fromARGB(255, 233, 66, 16), 'Hotel'
+        decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage(
+                imagePath
+                ),
+              fit: BoxFit.cover,
+            ),
+        ),
+        child:SafeArea(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                alignment: Alignment.topLeft,
+                padding: const EdgeInsets.fromLTRB(15.0, 0, 0, 200.0),
+                child: IconButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => States()),
+                    );
+                  }, 
+                  icon: const Icon(
+                    Icons.arrow_back_ios_new,
+                    size: 30.0,
+                    color: Colors.white,
+                  ),
+                ),
               ),
-            const SizedBox(height:40),
+              Expanded(
+                flex: 2,
+                child: Container(
+                  padding: const EdgeInsets.fromLTRB(10.0, 15.0, 10.0, 0),
+                  decoration: const BoxDecoration(
+                    color: Colors.white70,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(40.0),
+                      topRight: Radius.circular(40.0),
+                    ),
+                  ),
+                  child: ListView(
+                    children: [
+                      Text(
+                        name,
+                        style: const TextStyle(
+                          fontSize: 35,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.black
+                        ),
+                      ),
 
-            buildButton(context, 'Restaurant', Icons.restaurant, Color.fromARGB(255, 233, 66, 16), 'Restaurant'),
-            const SizedBox(height: 40),
+                      const SizedBox(
+                        height: 30.0,
+                      ),
 
-            buildButton(context, 'Museum', Icons.museum, const Color.fromARGB(255, 233, 66, 16),'Museum'),
-            const SizedBox(height: 40),
+                      buildButton(
+                        context, 
+                        'Hotel', 
+                        Icons.hotel,
+                        'Hotel'
+                      ),
 
-            buildButton(context, 'Beach', Icons.beach_access, const Color.fromARGB(255, 233, 66, 16),'Beach'),
-          ],
+                      const SizedBox(
+                        height: 5
+                      ),
+
+                      buildButton(
+                        context, 
+                        'Restaurant', 
+                        Icons.restaurant,
+                        'Restaurant'
+                      ),
+
+                      const SizedBox(
+                        height: 5
+                      ),
+
+                      buildButton(
+                        context, 
+                        'Museum', 
+                        Icons.museum,
+                        'Museum'
+                      ),
+
+                      const SizedBox(
+                        height: 5
+                      ),
+
+                      buildButton(
+                        context, 
+                        'Beach', 
+                        Icons.beach_access,
+                        'Beach'
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
-      )
     );
   }
 
   Widget buildButton(
-      BuildContext context, String text, IconData iconData, Color color, String type) {
+    BuildContext context, 
+    String text, 
+    IconData iconData,
+    String type
+    ) {
+
     return GestureDetector(
        onTap: () => Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => Display_Data(name_dp: name, type: type ,)),
+        MaterialPageRoute(builder: (context) => Display_Data(deptName: name, type: type)),
       ),
   
       child: Container(
-        width: 150.0,
+        margin: const EdgeInsets.all(10.0),
+        height: 90.0,
+        width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
-            boxShadow: const [
-              BoxShadow(
-                  offset: Offset(0.0, 20.0),
-                  blurRadius: 30.0,
-                  color: Colors.black)
-            ],
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(22.0)),
-        child: Row(children: <Widget>[
-          Container(
-            height: 50.0,
-            width: 110.0,
-            padding:
-                const EdgeInsets.symmetric(vertical: 12.0, horizontal: 12.0),
-            decoration: BoxDecoration(
-                color: color,
-                borderRadius: const BorderRadius.only(
-                    bottomLeft: Radius.circular(95.0),
-                    topLeft: Radius.circular(95.0),
-                    bottomRight: Radius.circular(200.0))),
-            child: Text(
-              text,
-              style: Theme.of(context)
-                  .textTheme
-                  .labelLarge
-                  ?.apply(color: Colors.black),
+          boxShadow: const [
+            BoxShadow(
+              offset: Offset(5.0, 10.0),
+              blurRadius: 5.0,
+              color: Colors.black45
             ),
-          ),
-          Icon(
-            iconData,
-            size: 30.0,
-          )
-        ]),
+          ],
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(10.0),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            const SizedBox(
+              width: 5.0,
+            ),
+            Icon(
+              iconData,
+              size: 35.0,
+              color: const Color.fromARGB(255, 233, 66, 16),
+            ),
+            const SizedBox(
+              width: 5.0,
+            ),
+            Text(
+                text,
+                style: const TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black
+                ),
+              ),
+            const SizedBox(
+              width: 5.0,
+            ),
+            Container(
+              alignment: Alignment.centerRight,
+              child: const Icon(
+                Icons.arrow_forward_ios,
+                size: 30.0,
+                color: Colors.black26,
+              ),
+            ),
+          ]
+        ),
       ),
     );
   }

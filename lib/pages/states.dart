@@ -35,7 +35,7 @@ class _StatesState extends State<States> {
     onTap: ()  => Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) =>  Places(name: dept.name),
+          builder: (context) =>  Places(name: dept.name, imagePath: dept.imagePath),
         ),
       ),
 
@@ -49,7 +49,7 @@ class _StatesState extends State<States> {
                 ),
               fit: BoxFit.cover,
             ),
-            borderRadius: BorderRadius.all(
+            borderRadius: const BorderRadius.all(
               Radius.circular(10.0),
             ),
           ),
