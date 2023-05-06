@@ -1,8 +1,11 @@
 import 'dart:io';
 import 'package:app/pages/homepage.dart';
+import 'package:firebase_database/firebase_database.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:image_picker/image_picker.dart';
 
 
 class Register extends StatefulWidget {
@@ -21,6 +24,15 @@ class _RegisterState extends State<Register> {
   final TextEditingController departmentController = TextEditingController();
 
   final _firestore = FirebaseFirestore.instance;
+  XFile? file;
+  String imageUrl = '';
+  DatabaseReference? dbRef;
+
+  @override
+  void initState() {
+    super.initState();
+    dbRef = FirebaseDatabase.instance.ref().child('Places');
+  }
 
   String email = '';
   String name = '';
@@ -214,17 +226,24 @@ class _RegisterState extends State<Register> {
                       const SizedBox(height: 20.0),
                       GestureDetector(
                           onTap: () async{
-                            FilePickerResult? result =
-                            await FilePicker.platform.pickFiles(type: FileType.image);
+                            // FilePickerResult? result =
+                            // await FilePicker.platform.pickFiles(type: FileType.image);
 
-                            if (result != null) {
-                              File file = File(result.files.single.path!);
-                              // Do something with the selected image file
+                            // if (result != null) {
+                            //   File file = File(result.files.single.path!);
+                            //   // Do something with the selected image file
+                            // }
+                            try{
+                              // Pick image from gallery
+                              ImagePicker imagePicker = ImagePicker();
+                              file = await imagePicker.pickImage(source: ImageSource.gallery);
+                            
+                            } on Exception catch (e) {
+                              print(e);
                             }
                           },
                           child: Container(
                             height: 50.0,
-                            // width: 300.0,
                             margin: const EdgeInsets.symmetric(horizontal: 50),
                             alignment: Alignment.center,
                             decoration: BoxDecoration(
@@ -252,15 +271,46 @@ class _RegisterState extends State<Register> {
                       ),
                       const SizedBox(height: 20.0),
                       GestureDetector(
-                        onTap: () {
+                        onTap: () async {
+                          
+                          // Get reference to firebase storage root
+                          Reference referenceRoot = FirebaseStorage.instance.ref();
+                          Reference referenceImages = referenceRoot.child('images');
+
+                          //Create reference for the image to be stored
+                          Reference referenceImageUpload = referenceImages.child('${file?.name}');
+
+
+                          // Handle error/success
+                          try{
+                            // Store image file
+                            await referenceImageUpload.putFile(File(file!.path));
+                            //Success: get url
+                            imageUrl = await referenceImageUpload.getDownloadURL();
+                          }catch(error){
+                            print(error);
+                          }
+
+                          
+                          if(imageUrl.isEmpty){
+                            ScaffoldMessenger.of(context)
+                              .showSnackBar(
+                                const SnackBar(
+                                  content: Text('Please upload an image')
+                                )
+                            );
+                          }
+
                           // Implement firebase registration connection here
                           _firestore.collection('places').add({
                             'email': email,
-                            'place_name': name,
-                            'state': state,
+                            'name': name,
+                            'dept': state,
                             'city': city,
-                            'addresse': address,
+                            'address': address,
+                            'image': imageUrl,
                           });
+
                         },
                         child: Container(
                           height: 50.0,
