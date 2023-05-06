@@ -119,10 +119,12 @@ class _StatesState extends State<States> {
                     }, 
                     icon: const Icon(
                       Icons.arrow_back_ios_new,
-                      size: 30.0,
+                      size: 20.0,
                       color: Colors.white,
                     ),
                   ),
+                  SizedBox(
+                    height: 10.0),
                   Image.asset(
                     'assets/images/chillHT_logo.png',
                     height: 80,

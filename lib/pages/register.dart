@@ -21,7 +21,7 @@ class _RegisterState extends State<Register> {
   final TextEditingController businessNameController = TextEditingController();
   final TextEditingController cityController = TextEditingController();
   final TextEditingController addressController = TextEditingController();
-  final TextEditingController departmentController = TextEditingController();
+  final TextEditingController descriptionController = TextEditingController();
 
   final _firestore = FirebaseFirestore.instance;
   XFile? file;
@@ -36,9 +36,47 @@ class _RegisterState extends State<Register> {
 
   String email = '';
   String name = '';
-  String state = '';
+  String desc = '';
   String city = '';
   String address = '';
+  String selectedDept = 'Ouest';
+  String selectedType = 'Restaurant';
+
+  List<String> departements= [
+    "Artibonite",
+    "Centre",
+    "Grand'Anse",
+    "Nippes",
+    "Nord",
+    "Nord-Est",
+    "Nord-Ouest",
+    "Ouest",
+    "Sud",
+    "Sud-Est"
+  ];
+
+  List<String> types= [
+    "Restaurant",
+    "Hotel",
+    "Museum",
+    "Beach",
+  ];
+
+  Widget dropDownList(Widget child){
+    return Expanded(
+            child: Container(
+              height: 55.0,
+              width: MediaQuery.of(context).size.width/2,
+              margin:  const EdgeInsets.fromLTRB(15.0, 0, 0, 0),
+              padding: const EdgeInsets.only(left: 15.0),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(15.0)
+              ),
+              child: child,
+            ),
+          );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -155,6 +193,62 @@ class _RegisterState extends State<Register> {
                         onChanged: (value) => name = value,
                       ),
                       const SizedBox(height: 20.0),
+
+                      Row(
+                        children: [
+                          const Icon(
+                            Icons.restaurant_menu_outlined,
+                            color: Colors.deepOrange,
+                          ),
+                          dropDownList(
+                            DropdownButton<String>(
+                            value: selectedType,
+                            items: types.map((String type) {
+                              return DropdownMenuItem<String>(
+                                value: type,
+                                child: Text(type),
+                                
+                              );
+                            }).toSet().toList(), 
+                            onChanged: (String? newValue) {
+                              setState(() {
+                                selectedType = newValue!;
+                              });
+                            },
+                          ),
+                          ),
+                        ],
+                      ),
+
+                      const SizedBox(height: 20.0),
+
+                      Row(
+                        children: [
+                          const Icon(
+                            Icons.add_location_alt_sharp,
+                            color: Colors.deepOrange,
+                          ),
+                          dropDownList(
+                            DropdownButton<String>(
+                            value: selectedDept,
+                            items: departements.map((String dept) {
+                              return DropdownMenuItem<String>(
+                                value: dept,
+                                child: Text(dept),
+                                
+                              );
+                            }).toSet().toList(), 
+                            onChanged: (String? newValue) {
+                              setState(() {
+                                selectedDept = newValue!;
+                              });
+                            },
+                          ),
+                          ),
+                        ],
+                      ),
+
+                      const SizedBox(height: 20.0),
                       TextField(
                         controller: cityController,
                         decoration: const InputDecoration(
@@ -202,16 +296,17 @@ class _RegisterState extends State<Register> {
                       ),
                       const SizedBox(height: 20.0),
                       TextField(
-                        controller: departmentController,
+                        keyboardType: TextInputType.multiline,
+                        controller: descriptionController,
                         decoration: const InputDecoration(
-                          hintText: 'Department',
+                          hintText: 'Description',
                           hintStyle: TextStyle(
                             color: Colors.black45,
                           ),
                           filled: true,
                           fillColor: Colors.white,
                           icon: Icon(
-                            Icons.add_location_alt_sharp,
+                            Icons.text_decrease_outlined,
                             color: Colors.deepOrange,
                           ),
                           border: OutlineInputBorder(
@@ -221,18 +316,17 @@ class _RegisterState extends State<Register> {
                             borderSide: BorderSide.none,
                           ),
                         ),
-                        onChanged: (value) => state = value,
+                        onChanged: (value) => desc = value,
+                      ),
+                      const SizedBox(height: 20.0),
+                      Center(
+                        child: Text(
+                          '${file?.name}',
+                        ),
                       ),
                       const SizedBox(height: 20.0),
                       GestureDetector(
                           onTap: () async{
-                            // FilePickerResult? result =
-                            // await FilePicker.platform.pickFiles(type: FileType.image);
-
-                            // if (result != null) {
-                            //   File file = File(result.files.single.path!);
-                            //   // Do something with the selected image file
-                            // }
                             try{
                               // Pick image from gallery
                               ImagePicker imagePicker = ImagePicker();
@@ -305,7 +399,9 @@ class _RegisterState extends State<Register> {
                           _firestore.collection('places').add({
                             'email': email,
                             'name': name,
-                            'dept': state,
+                            'type': selectedType,
+                            'dept': selectedDept,
+                            'description': desc,
                             'city': city,
                             'address': address,
                             'image': imageUrl,
