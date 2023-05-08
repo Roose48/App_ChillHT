@@ -7,7 +7,7 @@ class data {
   String? type;
   String? nom;
   String? adress;
-  Null? images;
+  String? images;
   String? description;
 
   data(

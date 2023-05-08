@@ -18,24 +18,27 @@ class _FirestoreImageDisplayState extends State<FirestoreImageDisplay> {
   @override
   void initState() {
     super.initState();
-    // Set the initial value of imageUrl to an empty string
-    imageUrl = '';
-    //Retrieve the image from Firebase Storage
-    getImageUrl();
+    // // Set the initial value of imageUrl to an empty string
+    // imageUrl = '';
+    // //Retrieve the image from Firebase Storage
+    // getImageUrl();
+
+              debugPrint(widget.place.images.toString());
+
   }
 
-  Future<void> getImageUrl() async {
-    // Get the reference to the image file in Firebase Storage
-    final ref = storage.ref().child(widget.place.images.toString());
+  // Future<void> getImageUrl() async {
+  //   // Get the reference to the image file in Firebase Storage
+  //   final ref = storage.ref().child(widget.place.images.toString());
     
-    // Get the imageUrl to download URL
-    final url = await ref.getDownloadURL();
+  //   // Get the imageUrl to download URL
+  //   final url = await ref.getDownloadURL();
    
-    setState(() {
-      imageUrl = url;
+  //   setState(() {
+  //     imageUrl = url;
      
-    });
-  }
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -48,11 +51,10 @@ class _FirestoreImageDisplayState extends State<FirestoreImageDisplay> {
           SizedBox(
             height: 300,
             child: Image.network(
-              imageUrl,
+              widget.place.images.toString(),
               fit: BoxFit.cover,
             ),
           ),
-          
           
         ],
       ),
@@ -101,6 +103,8 @@ class _MyWidgetState extends State<firebaseImages> {
       imageUrl = url;
     });
   }
+
+  
   
   @override
   Widget build(BuildContext context) {
