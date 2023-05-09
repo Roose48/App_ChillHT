@@ -1,30 +1,22 @@
-import 'dart:convert';
+// import 'dart:convert';
 
-import 'package:app/components/departements.dart';
-import 'package:app/pages/data.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/material.dart';
+// import 'package:app/components/departements.dart';
+// import 'package:app/pages/data.dart';
+// import 'package:cloud_firestore/cloud_firestore.dart';
+// import 'package:flutter/material.dart';
+
+
 
 // class ItemList extends StatelessWidget {
-//   ItemList({
-//     Key? key,
-//     required String deptName,
-//     required String type,
-//   }) : super(key: key) {
+//   ItemList({Key? key, required String deptName, required String type, required String image}) : super(key: key) {
 //     _stream = _reference.snapshots();
 //   }
 
-//   final CollectionReference _reference = FirebaseFirestore.instance.collection('places');
+//   CollectionReference _reference =
+//   FirebaseFirestore.instance.collection('places');
 
-//   List<data> dataList = [];
-
-// //   placesRef.get().then((QuerySnapshot querySnapshot) {
-// //   querySnapshot.docs.forEach((doc) {
-// //     data newData = data.fromJson(doc.data());
-// //     dataList.add(newData);
-// //   });
-// // });
-
+//   //_reference.get()  ---> returns Future<QuerySnapshot>
+//   //_reference.snapshots()--> Stream<QuerySnapshot> -- realtime updates
 //   late Stream<QuerySnapshot> _stream;
 
 //   @override
@@ -36,17 +28,21 @@ import 'package:flutter/material.dart';
 //       body: StreamBuilder<QuerySnapshot>(
 //         stream: _stream,
 //         builder: (BuildContext context, AsyncSnapshot snapshot) {
+//           //Check error
 //           if (snapshot.hasError) {
 //             return Center(child: Text('Some error occurred ${snapshot.error}'));
 //           }
 
+//           //Check if data arrived
 //           if (snapshot.hasData) {
+//             //get the data
 //             QuerySnapshot querySnapshot = snapshot.data;
 //             List<QueryDocumentSnapshot> documents = querySnapshot.docs;
+
+//             //Convert the documents to Maps
 //             List<Map> items = documents.map((e) => e.data() as Map).toList();
 
-//               // debugPrint(element['image']);
-
+//             //Display the list
 //             return ListView.builder(
 //                 itemCount: items.length,
 //                 itemBuilder: (BuildContext context, int index) {
@@ -55,13 +51,17 @@ import 'package:flutter/material.dart';
 //                   //REturn the widget for the list items
 //                   return ListTile(
 //                     title: Text('${thisItem['name']}'),
-//                     //subtitle: Text('${thisItem['dept']}'),
+//                    // subtitle: Text('${thisItem['dept']}'),
 //                     leading: Container(
-//                       height: 100,
-//                       width: 100,
-//                       // child: thisItem.containsKey('image') ? Image.network(
-//                       // '${thisItem['image']}') : Container(),
+//                       height: 80,
+//                       width: 80,
+//                       child: thisItem.containsKey('image') ? Image.network(
+//                           '${thisItem['image']}') : Container(),
 //                     ),
+//                     // onTap: () {
+//                     //   Navigator.of(context).push(MaterialPageRoute(
+//                     //       builder: (context) => ItemDetails(thisItem['id'])));
+//                     // },
 //                   );
 //                 });
 //           }
@@ -70,17 +70,21 @@ import 'package:flutter/material.dart';
 //           return Center(child: CircularProgressIndicator());
 //         },
 //       ), //Display a list // Add a FutureBuilder
-//       //floatingActionButton: FloatingActionButton(
-//       // onPressed: () {
-//       //   Navigator.of(context)
-//       //       .push(MaterialPageRoute(builder: (context) => AddItem()));
-//       // },
-//       // tooltip: 'Increment',
-//       //child: const Icon(Icons.add),
+//       // floatingActionButton: FloatingActionButton(
+//       //   onPressed: () {
+//       //     Navigator.of(context)
+//       //         .push(MaterialPageRoute(builder: (context) => AddItem()));
+//       //   },
+//       //   tooltip: 'Increment',
+//       //   child: const Icon(Icons.add),
 //       // ),
 //     );
 //   }
 // }
+
+
+
+
 
 import 'dart:convert';
 
@@ -95,7 +99,7 @@ class Display_Data extends StatefulWidget {
   final String deptName;
   final String type;
 
-  const Display_Data({super.key, required this.deptName, required this.type});
+  const Display_Data({super.key, required this.deptName, required this.type, required String image});
 
   @override
   _Display_DataState createState() => _Display_DataState();
@@ -194,7 +198,7 @@ class _Display_DataState extends State<Display_Data> {
 
             List<data> dataList = snapshot.data!
                 .where((item) =>
-                    item.departementID == id && item.type == widget.type)
+                    item.departementID == id && item.type == widget.type  )
                 .toList();
 
             return ListView.builder(
@@ -205,7 +209,14 @@ class _Display_DataState extends State<Display_Data> {
                     dataList[index].nom ?? '',
                     style: const TextStyle(
                         fontSize: 20, fontWeight: FontWeight.bold),
+                        
                   ),
+                  leading: Container(
+                      height: 80,
+                      width: 80,
+                      child: dataList[index].images != null ? Image.network(
+                          '${dataList[index].images}') : Container(),
+                    ),
                   onTap: () => Navigator.push(
                     context,
                     MaterialPageRoute(

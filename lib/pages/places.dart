@@ -128,7 +128,7 @@ class Places extends StatelessWidget {
     return GestureDetector(
        onTap: () => Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => Display_Data(deptName: name, type: type)),
+        MaterialPageRoute(builder: (context) => Display_Data(deptName: name, type: type, image: imagePath)),
       ),
   
       child: Container(

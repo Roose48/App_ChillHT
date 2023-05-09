@@ -139,8 +139,11 @@ class _Descrip_DataState extends State<Descrip_Data> {
     return Scaffold(
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            Image.network(
+                          '${widget.place.images}', width: 100,height: 500,),
+          
             Text(widget.place.nom.toString()),
             Text(widget.place.adress.toString()),
             Text(widget.place.description.toString()),
@@ -149,7 +152,11 @@ class _Descrip_DataState extends State<Descrip_Data> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: const [
-                  Icon(Icons.favorite_border),
+                  //InkWell(
+                     // onTap: ,
+                      //child: Icon(Icons.favorite_border),
+                   // ),
+
                   Icon(Icons.share),
                   Icon(Icons.near_me),
                 ],
@@ -161,4 +168,8 @@ class _Descrip_DataState extends State<Descrip_Data> {
     );
   }
   
+}
+
+void saveEvent() {
+
 }
