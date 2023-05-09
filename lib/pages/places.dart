@@ -65,7 +65,7 @@ class Places extends StatelessWidget {
                       ),
 
                       const SizedBox(
-                        height: 30.0,
+                        height: 10.0,
                       ),
 
                       buildButton(
