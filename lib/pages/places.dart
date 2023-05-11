@@ -27,13 +27,10 @@ class Places extends StatelessWidget {
             children: [
               Container(
                 alignment: Alignment.topLeft,
-                padding: const EdgeInsets.fromLTRB(15.0, 0, 0, 200.0),
+                padding: const EdgeInsets.fromLTRB(15.0, 0, 0, 15.0),
                 child: IconButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => States()),
-                    );
+                    Navigator.pop(context);
                   }, 
                   icon: const Icon(
                     Icons.arrow_back_ios_new,
@@ -42,6 +39,30 @@ class Places extends StatelessWidget {
                   ),
                 ),
               ),
+              Container(
+                alignment: Alignment.topLeft,
+                padding: const EdgeInsets.fromLTRB(15.0, 0, 0, 150.0),
+                child: ShaderMask(
+                    shaderCallback: (bounds) => const LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      tileMode: TileMode.mirror,
+                      colors: [
+                        Color.fromARGB(255, 0, 81, 232), 
+                        Color.fromARGB(255, 222, 0, 0)
+                      ],
+                    ).createShader(bounds),
+                    child: Text(
+                      dept,
+                      style: const TextStyle(
+                        fontSize: 50,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.white
+                      ),
+                    ),
+                  ),
+              ), 
+
               Expanded(
                 flex: 2,
                 child: Container(
@@ -55,15 +76,6 @@ class Places extends StatelessWidget {
                   ),
                   child: ListView(
                     children: [
-                      Text(
-                        dept,
-                        style: const TextStyle(
-                          fontSize: 35,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.black
-                        ),
-                      ),
-
                       const SizedBox(
                         height: 10.0,
                       ),
@@ -128,7 +140,8 @@ class Places extends StatelessWidget {
     return GestureDetector(
        onTap: () => Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => PlacesList(dept: dept, type: type)),//Display_Data(deptName: name, type: type, image: imagePath)),
+        MaterialPageRoute(
+          builder: (context) => PlacesList(dept: dept, type: type, imagePath: imagePath,)),
       ),
   
       child: Container(
