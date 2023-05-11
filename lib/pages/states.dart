@@ -35,7 +35,7 @@ class _StatesState extends State<States> {
     onTap: ()  => Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) =>  Places(name: dept.name, imagePath: dept.imagePath),
+          builder: (context) =>  Places(dept: dept.name, imagePath: dept.imagePath),
         ),
       ),
 

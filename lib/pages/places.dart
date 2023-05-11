@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 
 
 class Places extends StatelessWidget {
-  final String name;
+  final String dept;
   final String imagePath;
 
-  const Places({super.key, required this.name, required this.imagePath});
+  const Places({super.key, required this.dept, required this.imagePath});
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +56,7 @@ class Places extends StatelessWidget {
                   child: ListView(
                     children: [
                       Text(
-                        name,
+                        dept,
                         style: const TextStyle(
                           fontSize: 35,
                           fontWeight: FontWeight.w500,
@@ -120,7 +120,7 @@ class Places extends StatelessWidget {
 
   Widget buildButton(
     BuildContext context, 
-    String text, 
+    String name,
     IconData iconData,
     String type
     ) {
@@ -128,7 +128,7 @@ class Places extends StatelessWidget {
     return GestureDetector(
        onTap: () => Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => PlacesList()),//Display_Data(deptName: name, type: type, image: imagePath)),
+        MaterialPageRoute(builder: (context) => PlacesList(dept: dept, type: type)),//Display_Data(deptName: name, type: type, image: imagePath)),
       ),
   
       child: Container(
@@ -161,7 +161,7 @@ class Places extends StatelessWidget {
               width: 5.0,
             ),
             Text(
-                text,
+                name,
                 style: const TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.w500,
