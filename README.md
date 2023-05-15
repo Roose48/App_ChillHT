@@ -19,6 +19,22 @@ Technology Used
 ## Preview
 <img src='chill.gif' title='' width='' alt='' />
 
+
+## Install
+### 1. Install flutter if you don't have
+[online documentation](https://docs.flutter.dev/)
+
+
+
+### 2. Create a new project flutter 
+`flutter create projectName`
+
+### 3. run the project 
+`cd projectName`
+`flutter run`
+
+1. `gridsome develop` to start a local dev server at `http://localhost:8080`
+4. Happy coding
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
