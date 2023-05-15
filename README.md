@@ -7,6 +7,12 @@ for a better experience. The application will not fail to suggest them
 restaurants, hotels, beaches and museums according to the chosen department. It will help them discover
 the splendor and beauty of the pearl of the Antilles.
 
+Technology Used
+  1- Flutter
+  2- Firebase 
+      cloud firestore
+      storage
+
 
 <img src='chill.gif' title='' width='' alt='' />
 
