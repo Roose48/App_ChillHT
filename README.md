@@ -20,20 +20,19 @@ Technology Used
 <img src='chill.gif' title='' width='' alt='' />
 
 
-## Install
-### 1. Install flutter if you don't have
-[online documentation](https://docs.flutter.dev/)
+The following required functionality is completed:
 
+ [x]User can sign up to create a new account Firebase Auth.
+ User can log in and log out of his or her account.
+ The current signed in user is persisted across app restarts.
+ User can search for a city.
+ User can see weather condition of selected city.
+ User can see details about selected city like weather forecast
+ User can save a city
+The following optional features are implemented:
 
-
-### 2. Create a new project flutter 
-`flutter create projectName`
-
-### 3. run the project 
-`cd projectName`
-
-`flutter run`
-
-4. Happy coding
+ User can see comments and images from selected city
+ The user can see the cities he has saved
+ The app is responsive
 
 
