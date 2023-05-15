@@ -1,8 +1,9 @@
 # ChillHT
 
-A new Flutter project.
+
 
 ## Getting Started
+<img src='ChillHT.mp4' title='' width='' alt='' />
 
 This project is a starting point for a Flutter application.
 
