@@ -23,18 +23,27 @@ Technology Used
  ## The following required functionality is completed:
 
  [x User can regist her business Firebase Auth.
+ 
  User can log in and log out of his or her account.
+ 
  The current signed in user is persisted across app restarts.
+ 
  User can search for a city.
+ 
  User can see weather condition of selected city.
+ 
  User can see details about selected city like weather forecast
+ 
  User can save a city]
  
 ## The following optional features are implemented:
 
   The user can see the cities he has visited and saved
+  
   The user can share his location with other people
+  
   User can like or dislike a place
+  
   The application is responsive
 
 
