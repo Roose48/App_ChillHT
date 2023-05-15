@@ -1,8 +1,13 @@
 # ChillHT
 
+> CHILLHT is a flutter application that will be like a guide or an electronic assistant
+that aims to improve the stay of tourists in Haiti. Our project
+allows each tourist to better know and navigate to the tourist sites for a better experience.
+for a better experience. The application will not fail to suggest them
+restaurants, hotels, beaches and museums according to the chosen department. It will help them discover
+the splendor and beauty of the pearl of the Antilles.
 
 
-## Getting Started
 <img src='chill.gif' title='' width='' alt='' />
 
 This project is a starting point for a Flutter application.
