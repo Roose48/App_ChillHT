@@ -3,7 +3,7 @@
 
 
 ## Getting Started
-<img src='ChillHT.gif' title='' width='' alt='' />
+<img src='chill.gif' title='' width='' alt='' />
 
 This project is a starting point for a Flutter application.
 
