@@ -22,7 +22,7 @@ Technology Used
 
 The following required functionality is completed:
 
- [xUser can sign up to create a new account Firebase Auth.]
+ [x User can sign up to create a new account Firebase Auth.]
  User can log in and log out of his or her account.
  The current signed in user is persisted across app restarts.
  User can search for a city.
