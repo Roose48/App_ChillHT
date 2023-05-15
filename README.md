@@ -31,6 +31,7 @@ Technology Used
 
 ### 3. run the project 
 `cd projectName`
+
 `flutter run`
 
 4. Happy coding
